@@ -1,4 +1,4 @@
-# fall-2020-website
+# cs196-124-official-website
 
 Official CS196 Website: [cs196.cs.illinois.edu](http://cs196.cs.illinois.edu)
 
