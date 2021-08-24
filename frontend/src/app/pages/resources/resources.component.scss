@@ -61,6 +61,9 @@ section {
 }
 
 @media (max-width: 559px) {
+  #resources {
+    padding-top:12%;
+  }
   .resources-table {
     height: 100vh;
     width: 100vw;

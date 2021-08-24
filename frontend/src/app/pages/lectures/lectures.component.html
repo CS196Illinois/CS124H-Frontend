@@ -1,13 +1,15 @@
-<div *ngIf="lectureVideo" id="burger">
-    <button type="button" mat-button (click)="drawer.toggle()">
-        <mat-icon aria-hidden="false" aria-label="Example home icon">menu</mat-icon>
-    </button>
-</div>
 <h1 style="padding-left: 1vw; padding-top : 6vh" *ngIf = "!lectureVideo">No lectures yet. Check again later</h1>
-<mat-drawer-container class="container"  autosize>
+<div class="helper"></div>
+<mat-drawer-container class="container" autosize>
+    <div *ngIf="lectureVideo">
+        <button id="burger" type="button" (click)="drawer.toggle()">
+           <mat-icon>menu_open</mat-icon>
+        </button>
+    </div>
     <mat-drawer #drawer class="sidenav" mode="side">
+        <h4>Lectures</h4>
         <div *ngFor = "let lecture of lectures">
-            <button id="button" (click)="drawer.toggle()" (click)="changeLecture(lecture.lectureID)" mat-button>{{lecture.title}}</button>
+            <button id="button" (click)="drawer.toggle()" (click)="changeLecture(lecture.lectureID)" >{{lecture.title}}</button>
         </div>
     </mat-drawer>
     <div class="sidenav-content">
@@ -25,7 +27,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
         ></iframe>
-        <p>{{lecture.content}}</p>
+        <p>{{lecture.msg}}</p>
     </div>
 
     

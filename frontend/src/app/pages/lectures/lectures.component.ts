@@ -1,7 +1,5 @@
 import { Component, OnInit,  NgZone } from '@angular/core';
-import { matDrawerAnimations } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
-import { LecturesTableComponent } from 'src/app/components/lectures-table/lectures-table.component';
 import * as data from "../../../assets/lectures.json";
 
 @Component({
@@ -30,7 +28,8 @@ export class LecturesComponent implements OnInit {
     for (let i = 0; i < lecture.video.length; i++) {
       this.lectureVideo.push({
         title: lecture.video[i].title,
-        link: this.sanitizer.bypassSecurityTrustResourceUrl(lecture.video[i].link)
+        link: this.sanitizer.bypassSecurityTrustResourceUrl(lecture.video[i].link),
+        msg: lecture.video[i].msg
       });
       console.log(this.lectureVideo);
     }

@@ -16,7 +16,7 @@ import { GradesService } from "./services/grades.service";
 import { LecturesComponent } from './pages/lectures/lectures.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav'; 
-import { MatIconModule } from "@angular/material";
+import { MatIconModule, MatMenuModule } from "@angular/material";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -46,6 +46,7 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatSidenavModule,
     MatIconModule,
+    MatMenuModule
   ],
   providers: [LoginService, GradesService],
   bootstrap: [AppComponent],

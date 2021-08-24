@@ -1,18 +1,26 @@
 .container {
-    margin-top: 3vh;
     width: 75vw;
     height: 88vh;
     border: 1px solid rgba(0, 0, 0, 0.5);
     overflow: auto;
 }
 
+.helper {
+    padding-bottom:10%;
+}
+
 #burger {
-    padding-top:5%;  
-    padding-left:1%; 
+    margin-top:1%;
+    left:0;
+    border:rgba(0, 0, 0, 0.5);
+    font-size: larger;
 }
 
 #button {
-    
+    border:0;
+    width:18vw;
+    margin: 1%;
+    border-radius: 6px;
 }
 
 .sidenav-content {
@@ -21,5 +29,18 @@
 }
 
 .sidenav {
-    padding: 3%;
+    padding-right:2%;
+    padding-left: 1%;
+    overflow: auto;
+}
+
+@media (max-width: 559px) {
+    .container {
+        margin-top: 3vh;
+        width: 100vw;
+        height: 88vh;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        overflow: auto;
+    }
+    
 }
