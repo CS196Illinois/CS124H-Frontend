@@ -37,6 +37,7 @@ const routes: Routes = [
     PersonComponent,
     GradesComponent,
     LecturesComponent,
+    LecturesTableComponent
   ],
   imports: [
     BrowserModule,

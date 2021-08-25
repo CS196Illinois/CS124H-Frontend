@@ -131,11 +131,6 @@
             "picture" : "timothy.jpg"
         }, 
         {
-            "name" : "Jonah",
-            "bio" : "Passionate about Machine Learning. Enjoys Golf, Tennis, and Surfing. Occasionally plays Chess and Piano. Cruising through life sleep-deprived.",
-            "picture" : "jonah.jpg"
-        }, 
-        {
             "name" : "Faraz",
             "bio" : "CS and Advertising major interested in sorting and organizing data to make inferences. ",
             "picture" : "faraz.jpeg"
