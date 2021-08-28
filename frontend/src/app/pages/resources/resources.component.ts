@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faChalkboard, faCode, faLock, faCog, faDesktop, faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faChalkboard, faCode, faLock, faCog, faDesktop, faCircle, faCalendar, faFilm } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-resources',
@@ -14,6 +14,8 @@ export class ResourcesComponent implements OnInit {
   faCog = faCog;
   faDesktop = faDesktop;
   faCircle = faCircle
+  faCalendar = faCalendar;
+  faFilm = faFilm;
   constructor() { }
 
   ngOnInit() {
