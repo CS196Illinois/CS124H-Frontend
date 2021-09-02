@@ -1,5 +1,5 @@
 .resources-table {
-  height: 100vh;
+  height:100%;
   width: 75vw;
   margin-top: 5%;
   padding: 0;
@@ -7,9 +7,10 @@
   padding: 0% 8% 20% 8%;
 }
 
-app-lectures-table {
-  width: 100%;
+.resource-page {
+  height:100%;
 }
+
 
 p {
   line-height: 1.8;
@@ -18,7 +19,7 @@ p {
   margin: 0;
 }
 .container {
-  width: 90%;
+  height: 100%;
   padding-bottom: 10%;
 }
 
@@ -61,12 +62,10 @@ section {
 }
 
 @media (max-width: 559px) {
-  #resources {
-    padding-top:12%;
+  .big-container {
+    padding-top:8%;
   }
   .resources-table {
-    height: 100vh;
-    width: 100vw;
     margin-top: 5%;
     padding: 0;
     box-sizing: border-box;
