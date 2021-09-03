@@ -7,7 +7,7 @@
         },
         {
             "name" : "Matt",
-            "bio" : "I’m a sophomore majoring in Computer Science + Economics. My interests are mobile development, fintech, and data analytics. I’m also a pilot in my free time.",
+            "bio" : "I’m a junior majoring in Computer Science + Economics. My interests are mobile development, fintech, and data analytics. I’m also a pilot in my free time.",
             "picture" : "matt.jpeg"
         },
         {
@@ -94,6 +94,16 @@
             "name" : "Raghav",
             "bio" : "CS Major, jazz pianist, and always eager to help!",
             "picture" : "raghav.jpeg"
+        },
+        {
+            "name" : "Prashant",
+            "bio" : "extreme sza enthusiast; hmu if you like playing smash too 😜",
+            "picture" : "prashant.png"
+        },
+        {
+            "name" : "Grace",
+            "bio" : "dogecoin. diamond hands.",
+            "picture" : "grace.jpg"
         }
     ]
 }
