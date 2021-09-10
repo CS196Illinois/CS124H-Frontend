@@ -31,6 +31,11 @@
             "picture" : "welby.jpg"
         },
         {
+            "name" : "Neil",
+            "bio" : "Coffee connoisseur and raging Rustacean",
+            "picture" : "neil.jpg"
+        }, 
+        {
             "name" : "Shreya",
             "bio" : "Hey! I'm a sleep-deprived sophomore in bioengineering interested in data science and eating good food",
             "picture" : "shreya_b.jpeg"
@@ -54,11 +59,6 @@
             "name" : "Rayna",
             "bio" : "Sleep deprived poli sci major with a lot of opinions and a passion for crafts",
             "picture" : "rayna.jpg"
-        }, 
-        {
-            "name" : "Neil",
-            "bio" : "Hi! I'm Neil, and I'm a freshman in CS. Come talk to me about Python, soccer, and/or baseball!",
-            "picture" : "neil.jpg"
         }, 
         {
             "name" : "Daniel",
