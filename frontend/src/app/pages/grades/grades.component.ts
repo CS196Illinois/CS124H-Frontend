@@ -9,10 +9,12 @@ import { LoginService } from "src/app/services/login.service";
 })
 export class GradesComponent implements OnInit {
   grades;
-  homework_grades;
-  attendance_grades;
-  project_grades;
-  extra_credit_grades;
+  sprint0 = [];
+  sprint1 = [];
+  sprint2 = [];
+  sprint3 = [];
+  sprint4 = [];
+  sprint5 = [];
   name;
   user: gapi.auth2.GoogleUser;
   flag: boolean = false;
@@ -51,17 +53,54 @@ export class GradesComponent implements OnInit {
     }
     this.name = this.user.getBasicProfile().getGivenName();
     var grades = JSON.parse(JSON.stringify(data));
-    this.homework_grades = grades.grades.filter(
-      item => item.assignmentType == 3
-    );
-    this.attendance_grades = grades.grades.filter(
-      item => item.assignmentType == 1
-    );
-    this.project_grades = grades.grades.filter(
-      item => item.assignmentType == 2
-    );
-    this.extra_credit_grades = grades.grades.filter(
-      item => item.assignmentType == 4
-    );
+    console.log("tyest" + grades);
+    var gradesArr = grades.grades
+    for (var i = 0; i < gradesArr.length; i++) {
+      for (const [key, value] of Object.entries(gradesArr[i])) {
+        let assignmentName = "";
+        switch(key) {
+          case 'sprint':
+            continue;
+          case 'sprint grade':
+            assignmentName = 'Total Sprint Grade'
+            break;
+          case 'participation grades':
+            assignmentName = 'Project Participation'
+            break;
+          case 'vcs grades':
+            assignmentName = 'Version Control and Workflow'
+            break;
+          case 'completion individual grade':
+            assignmentName = 'Task Completion'
+            break;
+          case 'comm_grades_team':
+            assignmentName = 'Communication'
+            break;
+          case 'completion_grades_team':
+            assignmentName = 'Team Completion'
+        }
+        console.log({'assignmentName': assignmentName, 'grade': value})
+        switch(i) {
+          case 0:
+            this.sprint0.push({'assignmentName': assignmentName, 'grade': value})
+            break;
+          case 1:
+            this.sprint1.push({'assignmentName': assignmentName, 'grade': value})
+            break;
+          case 2:
+            this.sprint2.push({'assignmentName': assignmentName, 'grade': value})
+            break;
+          case 3:
+            this.sprint3.push({'assignmentName': assignmentName, 'grade': value})
+            break;
+          case 4:
+            this.sprint4.push({'assignmentName': assignmentName, 'grade': value})
+            break;
+          case 5:
+            this.sprint5.push({'assignmentName': assignmentName, 'grade': value})
+            break;
+        }
+      }
+    }
   }
 }

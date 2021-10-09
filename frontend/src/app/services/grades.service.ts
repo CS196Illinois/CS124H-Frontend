@@ -27,8 +27,9 @@ export class GradesService {
         Authorization: this.user.getAuthResponse().id_token
       })
     };
+    // deployment endpoint: https://cs196.cs.illinois.edu/wsgi/api
     this.http
-      .get<JSON>("https://cs196.cs.illinois.edu/wsgi/api", httpOptions)
+      .get<JSON>("https://cs196.cs.illinois.edu/wsgi/api/get/124grades", httpOptions)
       .subscribe(res => {
         this.grades.next(res);
       });
