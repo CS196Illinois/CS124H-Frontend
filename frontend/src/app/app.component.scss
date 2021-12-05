@@ -1,7 +1,10 @@
 .main {
   display: flex;
-  flex-direction: row;
-  height: 100vh;
+  // flex-direction: row;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .main-data {
@@ -24,8 +27,8 @@ app-sidebar {
   position: absolute;
   width: 200px;
   height: 35px;
-  margin-left: 83%;
-  padding-top: 3%;
+  right: 10px;
+  top: 20px;
   z-index: 20;
 }
 
@@ -41,7 +44,8 @@ app-sidebar {
   #navmobile {
     position: absolute;
     display: block;
-    margin: 3%;
+    top: 10px;
+    left: 10px;
     border: 0;
     background-color: Transparent;
   }
@@ -72,7 +76,7 @@ app-sidebar {
   }
 }
 
-@media (min-width: 559px) {
+@media (min-width: 560px) {
   .main-data {
     overflow-wrap: break-word;
     word-wrap: break-word;
