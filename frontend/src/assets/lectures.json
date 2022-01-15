@@ -1,15 +1,15 @@
 {
   "lectures": [
     {
-      "lectureID": "0",
-        "title": "Lesson 0",
-        "date": "24 August 2021",
+      "lectureID": "-1",
+        "title": "Template Format",
+        "date": "Spring 2022",
         "slides": "",
         "video": [
           {
-            "title": "Introduction to CS196!",
+            "title": "Follow this JSON format for adding new lecture data",
             "link": "https://www.youtube.com/embed/Q2PlM9eFI24",
-            "msg": "General Information Video (≤5mins): https://youtu.be/d90-myeBc-k"
+            "msg": "This is the msg variable"
           }
         ]
       }
