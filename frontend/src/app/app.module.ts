@@ -26,13 +26,9 @@ const routes: Routes = [
   { path: "resources", component: ResourcesComponent },
   { path: "staff", component: StaffComponent },
   { path: "grades", component: GradesComponent },
-<<<<<<< HEAD
   { path: "lectures", component: LecturesComponent},
   { path: "hof", component: HofComponent},
   { path: "faq", component: FaqComponent}
-=======
-  { path: "lectures", component: LecturesComponent },
->>>>>>> e44a837b86b57ffb3dc4025e4f32fc09f0db8e2f
 ];
 
 @NgModule({
