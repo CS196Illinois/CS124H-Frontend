@@ -1,0 +1,43 @@
+.hof-page-container {
+    margin-top: 15vh;
+    width: 75vw;
+}
+
+.hof-plaque-container {
+    margin-bottom: 10vh;
+}
+
+.hof-plaque {
+    z-index: -1;
+    width: 18rem;
+
+}
+
+.img-container {
+    width: 15rem;
+    height: 15rem;
+}
+
+.hof-button {
+
+}
+
+.hof-card-container {
+    display: flex;
+}
+
+.hof-card {
+    width:60vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-container {
+        width: 100%;
+    }
+    .hof-card-container {
+        display: block;
+    }
+    .hof-card {
+        width:75vw;
+    }
+}

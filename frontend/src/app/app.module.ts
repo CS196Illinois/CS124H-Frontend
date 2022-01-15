@@ -17,13 +17,18 @@ import { LecturesComponent } from './pages/lectures/lectures.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav'; 
 import { MatIconModule, MatMenuModule } from "@angular/material";
+import {MatCardModule} from '@angular/material/card';
+import { HofComponent } from './pages/hof/hof.component';
+import { FaqComponent } from './pages/faq/faq.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "resources", component: ResourcesComponent },
   { path: "staff", component: StaffComponent },
   { path: "grades", component: GradesComponent },
-  { path: "lectures", component: LecturesComponent}
+  { path: "lectures", component: LecturesComponent},
+  { path: "hof", component: HofComponent},
+  { path: "faq", component: FaqComponent}
 ];
 
 @NgModule({
@@ -37,7 +42,9 @@ const routes: Routes = [
     PersonComponent,
     GradesComponent,
     LecturesComponent,
-    LecturesTableComponent
+    LecturesTableComponent,
+    HofComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +54,8 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatSidenavModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatCardModule
   ],
   providers: [LoginService, GradesService],
   bootstrap: [AppComponent],

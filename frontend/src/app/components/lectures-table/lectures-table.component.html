@@ -1,5 +1,5 @@
 <h1>{{lecture.title}}</h1>
-<div *ngFor = "let lecture of lectureVideo" >
+<div *ngFor = "let lecture of lectureVideo" class="lecture-container">
   <h3>{{lecture.title}}</h3>
   <iframe
     *ngIf = "lecture.link"

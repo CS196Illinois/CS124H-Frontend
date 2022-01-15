@@ -1,6 +1,6 @@
 <h1 style="padding-left: 1vw; padding-top : 6vh" *ngIf = "!lectureVideo">No lectures yet. Check again later</h1>
 <div class="helper"></div>
-<mat-drawer-container class="container" autosize>
+<mat-drawer-container class="container">
     <div *ngIf="lectureVideo">
         <button id="burger" type="button" (click)="drawer.toggle()">
            <mat-icon>menu_open</mat-icon>
