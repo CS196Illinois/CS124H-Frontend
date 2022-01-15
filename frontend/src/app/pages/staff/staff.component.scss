@@ -7,30 +7,28 @@
 }
 
 .people {
-  margin: 2% 2.5%
+  margin: 2% 2.5%;
 }
-
 
 .title {
   font-size: 3.5vw;
   margin-left: 5%;
   margin-bottom: 3%;
-  margin-top: 3%
+  margin-top: 3%;
 }
 
-
-@media  (max-width: 559px){
+@media (max-width: 559px) {
   .title {
-    margin-top: 10%
+    margin-top: 10%;
   }
   .link {
-      color: black;
-      margin-left: 5%;
+    color: black;
+    margin-left: 5%;
   }
 }
 
 @media only screen and (min-width: 559px) {
   nav {
-      display: none;
+    display: none;
   }
 }

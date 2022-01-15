@@ -1,18 +1,16 @@
-import { Component, OnInit,  NgZone } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { Component, OnInit, NgZone } from "@angular/core";
+import { DomSanitizer } from "@angular/platform-browser";
 import * as data from "../../../assets/lectures.json";
 
 @Component({
-  selector: 'app-lectures',
-  templateUrl: './lectures.component.html',
-  styleUrls: ['./lectures.component.scss']
+  selector: "app-lectures",
+  templateUrl: "./lectures.component.html",
+  styleUrls: ["./lectures.component.scss"],
 })
-
 export class LecturesComponent implements OnInit {
   lectures = data.lectures;
   lecture = data.lectures[0];
-  lectureVideo = [{
-  }];
+  lectureVideo = [{}];
 
   constructor(private sanitizer: DomSanitizer, private NgZone: NgZone) {}
 
@@ -20,7 +18,13 @@ export class LecturesComponent implements OnInit {
     this.populate(data.lectures[0]);
   }
 
-  populate(lecture) {
+  populate(lecture: {
+    lectureID?: string;
+    title?: string;
+    date?: string;
+    slides?: string;
+    video: any;
+  }) {
     if (!lecture.video) {
       this.lectureVideo = null;
       return;
@@ -28,20 +32,20 @@ export class LecturesComponent implements OnInit {
     for (let i = 0; i < lecture.video.length; i++) {
       this.lectureVideo.push({
         title: lecture.video[i].title,
-        link: this.sanitizer.bypassSecurityTrustResourceUrl(lecture.video[i].link),
-        msg: lecture.video[i].msg
+        link: this.sanitizer.bypassSecurityTrustResourceUrl(
+          lecture.video[i].link
+        ),
+        msg: lecture.video[i].msg,
       });
       console.log(this.lectureVideo);
     }
-
   }
 
-  changeLecture(id:number) {
+  changeLecture(id: number) {
     this.NgZone.run(() => {
-      this.lectureVideo = [{}]
+      this.lectureVideo = [{}];
       this.lecture = this.lectures[id];
       this.populate(this.lectures[id]);
     });
   }
-
 }

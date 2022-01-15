@@ -13,9 +13,9 @@ import { GradesComponent } from "./pages/grades/grades.component";
 import { HttpClientModule } from "@angular/common/http";
 import { LoginService } from "./services/login.service";
 import { GradesService } from "./services/grades.service";
-import { LecturesComponent } from './pages/lectures/lectures.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule } from '@angular/material/sidenav'; 
+import { LecturesComponent } from "./pages/lectures/lectures.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatIconModule, MatMenuModule } from "@angular/material";
 import {MatCardModule} from '@angular/material/card';
 import { HofComponent } from './pages/hof/hof.component';
@@ -26,9 +26,13 @@ const routes: Routes = [
   { path: "resources", component: ResourcesComponent },
   { path: "staff", component: StaffComponent },
   { path: "grades", component: GradesComponent },
+<<<<<<< HEAD
   { path: "lectures", component: LecturesComponent},
   { path: "hof", component: HofComponent},
   { path: "faq", component: FaqComponent}
+=======
+  { path: "lectures", component: LecturesComponent },
+>>>>>>> e44a837b86b57ffb3dc4025e4f32fc09f0db8e2f
 ];
 
 @NgModule({

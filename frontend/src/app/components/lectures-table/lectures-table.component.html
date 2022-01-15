@@ -1,8 +1,8 @@
-<h1>{{lecture.title}}</h1>
-<div *ngFor = "let lecture of lectureVideo" class="lecture-container">
-  <h3>{{lecture.title}}</h3>
+<h1>{{ lecture.title }}</h1>
+<div *ngFor="let lecture of lectureVideo">
+  <h3>{{ lecture.title }}</h3>
   <iframe
-    *ngIf = "lecture.link"
+    *ngIf="lecture.link"
     width="100%"
     height="400vh"
     [src]="lecture.link"
@@ -12,4 +12,3 @@
     allowfullscreen
   ></iframe>
 </div>
-
