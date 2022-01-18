@@ -1,9 +1,19 @@
 {
   "staff": [
     {
-      "name": "Eustis",
-      "bio": "computer vision go brrrrr",
-      "picture": "william.jpg"
+      "name": "Rayna",
+      "bio": "Sleep deprived poli sci major with a lot of opinions and a passion for crafts",
+      "picture": "rayna.jpg"
+    },
+    {
+      "name": "Rachael",
+      "bio": "milk before cereal",
+      "picture": "logo.png"
+    },
+    {
+      "name": "Jonah",
+      "bio": "I'm a sophomore majoring in Computer Science, interested in entrepreneurship and doing cool things with cs.",
+      "picture": "jonah.jpg"
     },
     {
       "name": "Matt",
@@ -11,9 +21,9 @@
       "picture": "matt.jpeg"
     },
     {
-      "name": "Jonah",
-      "bio": "I'm a sophomore majoring in Computer Science, interested in entrepreneurship and doing cool things with cs.",
-      "picture": "jonah.jpg"
+      "name": "Eustis",
+      "bio": "computer vision go brrrrr",
+      "picture": "william.jpg"
     },
     {
       "name": "Andrea",
@@ -61,11 +71,6 @@
       "picture": "tanishq.jpg"
     },
     {
-      "name": "Rayna",
-      "bio": "Sleep deprived poli sci major with a lot of opinions and a passion for crafts",
-      "picture": "rayna.jpg"
-    },
-    {
       "name": "Daniel",
       "bio": "As a reward for joining CS196 have a cake.",
       "picture": "daniel.jpg"
@@ -94,11 +99,6 @@
       "name": "Drshika",
       "bio": "garlic bread is yummy",
       "picture": "drshika.jpg"
-    },
-    {
-      "name": "Rachael",
-      "bio": "milk before cereal",
-      "picture": "logo.png"
     },
     {
       "name": "Raghav",
