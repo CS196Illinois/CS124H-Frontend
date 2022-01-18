@@ -1,45 +1,17 @@
 {
-    "lectures": [
-      {
-        "lectureID": "0",
-        "title": "TEST CS196",
-        "date": "Jan 26",
+  "lectures": [
+    {
+      "lectureID": "0",
+        "title": "Template Format",
+        "date": "Spring 2022",
         "slides": "",
         "video": [
           {
-            "title": "Welcome to CS196!",
-            "link": "https://www.youtube.com/embed/lOIPiB6xykQ",
-            "msg": ""
-          },
-          {
-            "title": "Bash 1",
-            "link": "https://www.youtube.com/embed/lOIPiB6xykQ",
-            "msg": ""
-          },
-          {
-            "title": "Git 1",
-            "link": "https://www.youtube.com/embed/00LDZh4IJ9g",
-            "msg": ""
-          },
-          {
-            "title": "Python",
-            "link": "https://www.youtube.com/embed/OMhz6QxbNJs",
-            "msg": ""
-          }
-        ]
-      },
-      {
-        "lectureID": "1",
-        "title": "TEST 2",
-        "date": "Jan 26",
-        "slides": "",
-        "video": [
-          {
-            "title": "Python",
-            "link": "https://www.youtube.com/embed/OMhz6QxbNJs",
-            "msg": "Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects."
+            "title": "Follow this JSON format for adding new lecture data",
+            "link": "https://www.youtube.com/embed/Q2PlM9eFI24",
+            "msg": "This is the msg variable"
           }
         ]
       }
-    ]
-  }
+  ]
+}

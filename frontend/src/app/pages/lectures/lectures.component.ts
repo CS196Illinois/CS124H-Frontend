@@ -15,6 +15,10 @@ export class LecturesComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer, private NgZone: NgZone) {}
 
   ngOnInit() {
+    if (data.lectures.length == 0) {
+      this.lectureVideo = null;
+      return;
+    }
     this.populate(data.lectures[0]);
   }
 

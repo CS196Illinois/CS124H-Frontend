@@ -1,17 +1,5 @@
 {
-  "lectures": [
-    {
-      "lectureID": "-1",
-        "title": "Template Format",
-        "date": "Spring 2022",
-        "slides": "",
-        "video": [
-          {
-            "title": "Follow this JSON format for adding new lecture data",
-            "link": "https://www.youtube.com/embed/Q2PlM9eFI24",
-            "msg": "This is the msg variable"
-          }
-        ]
-      }
-  ]
-}
+    "lectures": [
+        
+    ]
+  }
