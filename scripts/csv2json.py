@@ -9,7 +9,6 @@ with open(pathToCSV) as csvFile:
         name = row['name']
         pic = row['picture']
         row['picture'] = name.lower()
-        #data[name] = row
         data.append(row)
 
 overall['staff'] = data
