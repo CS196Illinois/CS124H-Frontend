@@ -107,129 +107,221 @@
 =======
   "staff": [
     {
-      "name": "Rayna",
-      "bio": "Sleep deprived poli sci major with a lot of opinions and a passion for crafts. Contact: rwuh2@illinois.edu",
-      "picture": "rayna.jpg"
-    },
+      "languages": "Mandarin", 
+      "bio": "", 
+      "name": "Rachael", 
+      "technical_areas": "i like ios, ml, and fullstack!", 
+      "picture": "rachael"
+    }, 
     {
-      "name": "Rachael",
-      "bio": "milk before cereal. Contact: rlwei2@illinois.edu",
-      "picture": "logo.png"
-    },
+      "languages": "Japanese, Mandarin", 
+      "bio": "", 
+      "name": "Rayna", 
+      "technical_areas": "Web Development, Mobile Development, Frontend", 
+      "picture": "rayna"
+    }, 
     {
-      "name": "Jonah",
-      "bio": "I'm a sophomore majoring in Computer Science, interested in entrepreneurship and finance.",
-      "picture": "jonah.jpg"
-    },
+      "languages": "", 
+      "bio": "", 
+      "name": "Dhiraj", 
+      "technical_areas": "Web Development (Django, React), Data Science/Analysis (Python)", 
+      "picture": "dhiraj"
+    }, 
     {
-      "name": "Matt",
-      "bio": "I’m a junior majoring in Computer Science + Economics. My interests are mobile development, fintech, and data analytics. I’m also a pilot in my free time.",
-      "picture": "matt.jpeg"
-    },
+      "languages": "Tamil", 
+      "bio": "", 
+      "name": "Sanjiv", 
+      "technical_areas": "Python, C++, Java, Android App Development, Firebase, Backend", 
+      "picture": "sanjiv"
+    }, 
     {
-      "name": "Eustis",
-      "bio": "computer vision go brrrrr",
-      "picture": "william.jpg"
-    },
+      "languages": "Telugu", 
+      "bio": "", 
+      "name": "Yash", 
+      "technical_areas": "App Development, Frontend ", 
+      "picture": "yash"
+    }, 
     {
-      "name": "Andrea",
-      "bio": "Spurs and Texans fan, an aspiring chef, a wannabe trap producer, and a gym rat.",
-      "picture": "andrea.png"
-    },
+      "languages": "", 
+      "bio": "", 
+      "name": "Nikhila", 
+      "technical_areas": "Interested in working on Backend, ML and App Dev!", 
+      "picture": "nikhila"
+    }, 
     {
-      "name": "Charles",
-      "bio": "coffee",
-      "picture": "charles.jpg"
-    },
+      "languages": "", 
+      "bio": "", 
+      "name": "Jacob", 
+      "technical_areas": "Fullstack (more proficient in frontend), Mobile/Desktop/Web App dev, Game dev", 
+      "picture": "jacob"
+    }, 
     {
-      "name": "Albert",
-      "bio": "getting big",
-      "picture": "albert.jpg"
-    },
+      "languages": "", 
+      "bio": "", 
+      "name": "Meghna ", 
+      "technical_areas": "Backend (Infra), Data Science (Python/Pandas) ", 
+      "picture": "meghna "
+    }, 
     {
-      "name": "Welby",
-      "bio": "css isn't a real programming language",
-      "picture": "welby.jpg"
-    },
+      "languages": "", 
+      "bio": "", 
+      "name": "Taylor", 
+      "technical_areas": "web development, backend (infra), flask", 
+      "picture": "taylor"
+    }, 
     {
-      "name": "Jasmine",
-      "bio": "Hi! I'm Jasmine, an avid foodie who takes daily naps and is trying to get on the Chloe Ting grind",
-      "picture": "jasmine.jpeg"
-    },
+      "languages": "Italian, Spanish", 
+      "bio": "", 
+      "name": "Dhruv", 
+      "technical_areas": "Frontend web development (intermediate HTML & CSS), Frontend desktop GUI (Java), Backend (Java, Javascript, Python, SQL). (Also a big fan of Spotify data analysis and Linked Lists)", 
+      "picture": "dhruv"
+    }, 
     {
-      "name": "Neil",
-      "bio": "Coffee connoisseur and raging Rustacean",
-      "picture": "neil.jpg"
-    },
+      "languages": "Gujarati, Hindi, Urdu, Punjabi, Spanish", 
+      "bio": "", 
+      "name": "Ritul", 
+      "technical_areas": "Kotlin, Java, Flutter, Dart, App Development (Android + iOS), CSS & HTML Web Development, Google Firebase Backend", 
+      "picture": "ritul"
+    }, 
     {
-      "name": "Shreya",
-      "bio": "Hey! I'm a sleep-deprived sophomore in bioengineering interested in data science and eating good food",
-      "picture": "shreya_b.jpeg"
-    },
+      "languages": "Tamil", 
+      "bio": "", 
+      "name": "Anagha", 
+      "technical_areas": "NA", 
+      "picture": "anagha"
+    }, 
     {
-      "name": "Tianyun",
-      "bio": "Sprinkle of optimistic existentialism. I also play violin.",
-      "picture": "tianyun.jpg"
-    },
+      "languages": "", 
+      "bio": "", 
+      "name": "Welby", 
+      "technical_areas": "Game Dev, Frontend, Android Dev", 
+      "picture": "welby"
+    }, 
     {
-      "name": "Tanishq",
-      "bio": "I think the Office has to be the most underrated show of all time. I'm just a Comp Sci and Phil major who loves Steve Carell.",
-      "picture": "tanishq.jpg"
-    },
+      "languages": "Hindi", 
+      "bio": "", 
+      "name": "Tanishq", 
+      "technical_areas": "Backend, ML/AI/Data Science, App Development", 
+      "picture": "tanishq"
+    }, 
     {
-      "name": "Daniel",
-      "bio": "As a reward for joining CS196 have a cake.",
-      "picture": "daniel.jpg"
-    },
+      "languages": "Mandarin", 
+      "bio": "", 
+      "name": "Jeffrey", 
+      "technical_areas": "iOS (UIKit, SpriteKit and SwiftUI), full-stack web (Django, Flask), data mining + machine learning (preferred with Python frameworks)", 
+      "picture": "jeffrey"
+    }, 
     {
-      "name": "Jeffrey",
-      "bio": "",
-      "picture": "logo.png"
-    },
+      "languages": "Chinese", 
+      "bio": "", 
+      "name": "Bryant", 
+      "technical_areas": "Backend, ML, CV", 
+      "picture": "bryant"
+    }, 
     {
-      "name": "Bryant",
-      "bio": "Almost dunked",
-      "picture": "bryant.jpeg"
-    },
+      "languages": "", 
+      "bio": "", 
+      "name": "Eustis", 
+      "technical_areas": "Backend, ML (focus on CV)", 
+      "picture": "eustis"
+    }, 
     {
-      "name": "Nick",
-      "bio": "Hi, I am Nick! I am in marching band, I enjoy trying new restaurants, and I love talking to new people!",
-      "picture": "nick_k.jpg"
-    },
+      "languages": "Chinese", 
+      "bio": "", 
+      "name": "Charles", 
+      "technical_areas": "Game Design, Web Development (Full Stack)", 
+      "picture": "charles"
+    }, 
     {
-      "name": "Timothy",
-      "bio": "my body is segfaulting due to my caffeine addiction",
-      "picture": "timothy.jpg"
-    },
+      "languages": "", 
+      "bio": "", 
+      "name": "Nishanth", 
+      "technical_areas": "Backend, Flask, Node.js, AWS, Python, Javascript", 
+      "picture": "nishanth"
+    }, 
     {
-      "name": "Drshika",
-      "bio": "garlic bread is yummy",
-      "picture": "drshika.jpg"
-    },
+      "languages": "korean", 
+      "bio": "", 
+      "name": "Tyler", 
+      "technical_areas": "infra, data science", 
+      "picture": "tyler"
+    }, 
     {
-      "name": "Raghav",
-      "bio": "CS Major, jazz pianist, and always eager to help!",
-      "picture": "raghav.jpeg"
-    },
+      "languages": "Hindi, Punjabi", 
+      "bio": "", 
+      "name": "Kiran", 
+      "technical_areas": "Frontend, app development, Python, JavaScript, Kotlin", 
+      "picture": "kiran"
+    }, 
     {
-      "name": "Prashant",
-      "bio": "extreme sza enthusiast; hmu if you like playing smash too 😜",
-      "picture": "prashant.png"
-    },
+      "languages": "Hindi", 
+      "bio": "", 
+      "name": "Aryan", 
+      "technical_areas": "Frontend iOS App Development, Google Cloud/Firebase Functions", 
+      "picture": "aryan"
+    }, 
     {
-      "name": "Grace",
-      "bio": "dogecoin. diamond hands.",
-      "picture": "grace.jpg"
-    },
+      "languages": "Bengali, Hindi", 
+      "bio": "", 
+      "name": "Sreyaash", 
+      "technical_areas": "Full-Stack, DBs, Algorithmic Trading", 
+      "picture": "sreyaash"
+    }, 
     {
-      "name": "Dhruv",
-      "bio": "PlayStation & football enthusiast (and I guess CS too).",
-      "picture": "dhruv.png"
-    },
+      "languages": "", 
+      "bio": "", 
+      "name": "Raghav", 
+      "technical_areas": "Backend, Data Science/ML", 
+      "picture": "raghav"
+    }, 
     {
-      "name": "Dhiraj",
-      "bio": "I love a good nap. Sometimes it's the only thing getting me out of bed in the morning.",
-      "picture": "dhiraj.jpg"
+      "languages": "", 
+      "bio": "", 
+      "name": "Shreya", 
+      "technical_areas": "Data Science/ML, Full-Stack", 
+      "picture": "shreya"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Michael", 
+      "technical_areas": "Java, C++, Python, C, Data Science/ML, App Development, Backend", 
+      "picture": "michael"
+    }, 
+    {
+      "languages": "Korean", 
+      "bio": "", 
+      "name": "Justin", 
+      "technical_areas": "Game Development, App Development, Frontend, Backend, Web Applications", 
+      "picture": "justin"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Tim", 
+      "technical_areas": "Backend (databases, infrastructure), Low-level dev (embedded, operating systems)", 
+      "picture": "tim"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Eric", 
+      "technical_areas": "Some Full stack, ML", 
+      "picture": "eric"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Neil", 
+      "technical_areas": "Backend, Full-Stack, Cloud stuff, Web Dev (APIs)", 
+      "picture": "neil"
+    }, 
+    {
+      "languages": "Indonesian", 
+      "bio": "", 
+      "name": "Jonah", 
+      "technical_areas": "Full-Stack (Web App Development), Backend (API Development), Data Science/ML (Quantitative Finance)  ", 
+      "picture": "jonah"
     }
   ]
 }
