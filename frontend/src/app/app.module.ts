@@ -17,7 +17,8 @@ import { LecturesComponent } from "./pages/lectures/lectures.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatIconModule, MatMenuModule } from "@angular/material";
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
+import { MatChipsModule } from "@angular/material";
 import { HofComponent } from './pages/hof/hof.component';
 import { FaqComponent } from './pages/faq/faq.component';
 
@@ -55,7 +56,8 @@ const routes: Routes = [
     MatSidenavModule,
     MatIconModule,
     MatMenuModule,
-    MatCardModule
+    MatCardModule,
+    MatChipsModule
   ],
   providers: [LoginService, GradesService],
   bootstrap: [AppComponent],

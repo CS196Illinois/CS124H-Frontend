@@ -9,5 +9,15 @@
       <b>{{ name }}</b>
     </h2>
     <p>{{ bio }}</p>
+    <mat-chip-list #chipList multiple *ngIf="split_technical_areas[0]">
+      <mat-chip class="chips-ta" *ngFor=" let technical_area of split_technical_areas ">
+        {{ technical_area }}
+      </mat-chip>
+    </mat-chip-list>
+    <mat-chip-list #chipList multiple *ngIf="split_languages[0]">
+      <mat-chip class="chips-lang" *ngFor=" let language of split_languages ">
+        {{ language }}
+      </mat-chip>
+    </mat-chip-list>
   </div>
 </div>

@@ -10,5 +10,7 @@ export class StaffComponent implements OnInit {
   staff = data.staff;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.staff.length);
+  }
 }
