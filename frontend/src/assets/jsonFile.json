@@ -1,0 +1,221 @@
+{
+  "staff": [
+    {
+      "languages": "Mandarin", 
+      "bio": "", 
+      "name": "Rachael", 
+      "technical_areas": "i like ios, ml, and fullstack!", 
+      "picture": "rachael"
+    }, 
+    {
+      "languages": "Japanese, Mandarin", 
+      "bio": "", 
+      "name": "Rayna", 
+      "technical_areas": "Web Development, Mobile Development, Frontend", 
+      "picture": "rayna"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Dhiraj", 
+      "technical_areas": "Web Development (Django, React), Data Science/Analysis (Python)", 
+      "picture": "dhiraj"
+    }, 
+    {
+      "languages": "Tamil", 
+      "bio": "", 
+      "name": "Sanjiv", 
+      "technical_areas": "Python, C++, Java, Android App Development, Firebase, Backend", 
+      "picture": "sanjiv"
+    }, 
+    {
+      "languages": "Telugu", 
+      "bio": "", 
+      "name": "Yash", 
+      "technical_areas": "App Development, Frontend ", 
+      "picture": "yash"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Nikhila", 
+      "technical_areas": "Interested in working on Backend, ML and App Dev!", 
+      "picture": "nikhila"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Jacob", 
+      "technical_areas": "Fullstack (more proficient in frontend), Mobile/Desktop/Web App dev, Game dev", 
+      "picture": "jacob"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Meghna ", 
+      "technical_areas": "Backend (Infra), Data Science (Python/Pandas) ", 
+      "picture": "meghna "
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Taylor", 
+      "technical_areas": "web development, backend (infra), flask", 
+      "picture": "taylor"
+    }, 
+    {
+      "languages": "Italian, Spanish", 
+      "bio": "", 
+      "name": "Dhruv", 
+      "technical_areas": "Frontend web development (intermediate HTML & CSS), Frontend desktop GUI (Java), Backend (Java, Javascript, Python, SQL). (Also a big fan of Spotify data analysis and Linked Lists)", 
+      "picture": "dhruv"
+    }, 
+    {
+      "languages": "Gujarati, Hindi, Urdu, Punjabi, Spanish", 
+      "bio": "", 
+      "name": "Ritul", 
+      "technical_areas": "Kotlin, Java, Flutter, Dart, App Development (Android + iOS), CSS & HTML Web Development, Google Firebase Backend", 
+      "picture": "ritul"
+    }, 
+    {
+      "languages": "Tamil", 
+      "bio": "", 
+      "name": "Anagha", 
+      "technical_areas": "NA", 
+      "picture": "anagha"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Welby", 
+      "technical_areas": "Game Dev, Frontend, Android Dev", 
+      "picture": "welby"
+    }, 
+    {
+      "languages": "Hindi", 
+      "bio": "", 
+      "name": "Tanishq", 
+      "technical_areas": "Backend, ML/AI/Data Science, App Development", 
+      "picture": "tanishq"
+    }, 
+    {
+      "languages": "Mandarin", 
+      "bio": "", 
+      "name": "Jeffrey", 
+      "technical_areas": "iOS (UIKit, SpriteKit and SwiftUI), full-stack web (Django, Flask), data mining + machine learning (preferred with Python frameworks)", 
+      "picture": "jeffrey"
+    }, 
+    {
+      "languages": "Chinese", 
+      "bio": "", 
+      "name": "Bryant", 
+      "technical_areas": "Backend, ML, CV", 
+      "picture": "bryant"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Eustis", 
+      "technical_areas": "Backend, ML (focus on CV)", 
+      "picture": "eustis"
+    }, 
+    {
+      "languages": "Chinese", 
+      "bio": "", 
+      "name": "Charles", 
+      "technical_areas": "Game Design, Web Development (Full Stack)", 
+      "picture": "charles"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Nishanth", 
+      "technical_areas": "Backend, Flask, Node.js, AWS, Python, Javascript", 
+      "picture": "nishanth"
+    }, 
+    {
+      "languages": "korean", 
+      "bio": "", 
+      "name": "Tyler", 
+      "technical_areas": "infra, data science", 
+      "picture": "tyler"
+    }, 
+    {
+      "languages": "Hindi, Punjabi", 
+      "bio": "", 
+      "name": "Kiran", 
+      "technical_areas": "Frontend, app development, Python, JavaScript, Kotlin", 
+      "picture": "kiran"
+    }, 
+    {
+      "languages": "Hindi", 
+      "bio": "", 
+      "name": "Aryan", 
+      "technical_areas": "Frontend iOS App Development, Google Cloud/Firebase Functions", 
+      "picture": "aryan"
+    }, 
+    {
+      "languages": "Bengali, Hindi", 
+      "bio": "", 
+      "name": "Sreyaash", 
+      "technical_areas": "Full-Stack, DBs, Algorithmic Trading", 
+      "picture": "sreyaash"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Raghav", 
+      "technical_areas": "Backend, Data Science/ML", 
+      "picture": "raghav"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Shreya", 
+      "technical_areas": "Data Science/ML, Full-Stack", 
+      "picture": "shreya"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Michael", 
+      "technical_areas": "Java, C++, Python, C, Data Science/ML, App Development, Backend", 
+      "picture": "michael"
+    }, 
+    {
+      "languages": "Korean", 
+      "bio": "", 
+      "name": "Justin", 
+      "technical_areas": "Game Development, App Development, Frontend, Backend, Web Applications", 
+      "picture": "justin"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Tim", 
+      "technical_areas": "Backend (databases, infrastructure), Low-level dev (embedded, operating systems)", 
+      "picture": "tim"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Eric", 
+      "technical_areas": "Some Full stack, ML", 
+      "picture": "eric"
+    }, 
+    {
+      "languages": "", 
+      "bio": "", 
+      "name": "Neil", 
+      "technical_areas": "Backend, Full-Stack, Cloud stuff, Web Dev (APIs)", 
+      "picture": "neil"
+    }, 
+    {
+      "languages": "Indonesian", 
+      "bio": "", 
+      "name": "Jonah", 
+      "technical_areas": "Full-Stack (Web App Development), Backend (API Development), Data Science/ML (Quantitative Finance)  ", 
+      "picture": "jonah"
+    }
+  ]
+}
