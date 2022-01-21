@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "staff": [
         {
         "name": "Rayna",
@@ -103,3 +104,133 @@
 
     ]
 }
+=======
+  "staff": [
+    {
+      "name": "Rayna",
+      "bio": "Sleep deprived poli sci major with a lot of opinions and a passion for crafts. Contact: rwuh2@illinois.edu",
+      "picture": "rayna.jpg"
+    },
+    {
+      "name": "Rachael",
+      "bio": "milk before cereal. Contact: rlwei2@illinois.edu",
+      "picture": "logo.png"
+    },
+    {
+      "name": "Jonah",
+      "bio": "I'm a sophomore majoring in Computer Science, interested in entrepreneurship and finance.",
+      "picture": "jonah.jpg"
+    },
+    {
+      "name": "Matt",
+      "bio": "I’m a junior majoring in Computer Science + Economics. My interests are mobile development, fintech, and data analytics. I’m also a pilot in my free time.",
+      "picture": "matt.jpeg"
+    },
+    {
+      "name": "Eustis",
+      "bio": "computer vision go brrrrr",
+      "picture": "william.jpg"
+    },
+    {
+      "name": "Andrea",
+      "bio": "Spurs and Texans fan, an aspiring chef, a wannabe trap producer, and a gym rat.",
+      "picture": "andrea.png"
+    },
+    {
+      "name": "Charles",
+      "bio": "coffee",
+      "picture": "charles.jpg"
+    },
+    {
+      "name": "Albert",
+      "bio": "getting big",
+      "picture": "albert.jpg"
+    },
+    {
+      "name": "Welby",
+      "bio": "css isn't a real programming language",
+      "picture": "welby.jpg"
+    },
+    {
+      "name": "Jasmine",
+      "bio": "Hi! I'm Jasmine, an avid foodie who takes daily naps and is trying to get on the Chloe Ting grind",
+      "picture": "jasmine.jpeg"
+    },
+    {
+      "name": "Neil",
+      "bio": "Coffee connoisseur and raging Rustacean",
+      "picture": "neil.jpg"
+    },
+    {
+      "name": "Shreya",
+      "bio": "Hey! I'm a sleep-deprived sophomore in bioengineering interested in data science and eating good food",
+      "picture": "shreya_b.jpeg"
+    },
+    {
+      "name": "Tianyun",
+      "bio": "Sprinkle of optimistic existentialism. I also play violin.",
+      "picture": "tianyun.jpg"
+    },
+    {
+      "name": "Tanishq",
+      "bio": "I think the Office has to be the most underrated show of all time. I'm just a Comp Sci and Phil major who loves Steve Carell.",
+      "picture": "tanishq.jpg"
+    },
+    {
+      "name": "Daniel",
+      "bio": "As a reward for joining CS196 have a cake.",
+      "picture": "daniel.jpg"
+    },
+    {
+      "name": "Jeffrey",
+      "bio": "",
+      "picture": "logo.png"
+    },
+    {
+      "name": "Bryant",
+      "bio": "Almost dunked",
+      "picture": "bryant.jpeg"
+    },
+    {
+      "name": "Nick",
+      "bio": "Hi, I am Nick! I am in marching band, I enjoy trying new restaurants, and I love talking to new people!",
+      "picture": "nick_k.jpg"
+    },
+    {
+      "name": "Timothy",
+      "bio": "my body is segfaulting due to my caffeine addiction",
+      "picture": "timothy.jpg"
+    },
+    {
+      "name": "Drshika",
+      "bio": "garlic bread is yummy",
+      "picture": "drshika.jpg"
+    },
+    {
+      "name": "Raghav",
+      "bio": "CS Major, jazz pianist, and always eager to help!",
+      "picture": "raghav.jpeg"
+    },
+    {
+      "name": "Prashant",
+      "bio": "extreme sza enthusiast; hmu if you like playing smash too 😜",
+      "picture": "prashant.png"
+    },
+    {
+      "name": "Grace",
+      "bio": "dogecoin. diamond hands.",
+      "picture": "grace.jpg"
+    },
+    {
+      "name": "Dhruv",
+      "bio": "PlayStation & football enthusiast (and I guess CS too).",
+      "picture": "dhruv.png"
+    },
+    {
+      "name": "Dhiraj",
+      "bio": "I love a good nap. Sometimes it's the only thing getting me out of bed in the morning.",
+      "picture": "dhiraj.jpg"
+    }
+  ]
+}
+>>>>>>> 7e2df4098bb629bb5c3040ddbe0b3a0361333712
