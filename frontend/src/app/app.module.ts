@@ -21,6 +21,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from "@angular/material";
 import { HofComponent } from './pages/hof/hof.component';
 import { FaqComponent } from './pages/faq/faq.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { QnaCardComponent } from './components/qna-card/qna-card.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -45,7 +47,8 @@ const routes: Routes = [
     LecturesComponent,
     LecturesTableComponent,
     HofComponent,
-    FaqComponent
+    FaqComponent,
+    QnaCardComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +61,7 @@ const routes: Routes = [
     MatMenuModule,
     MatCardModule,
     MatChipsModule,
+    MatExpansionModule
   ],
   providers: [LoginService, GradesService],
   bootstrap: [AppComponent],

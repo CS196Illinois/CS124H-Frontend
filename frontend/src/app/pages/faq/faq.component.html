@@ -1,1 +1,10 @@
-<p>faq works!</p>
+<div class="container">
+    <div *ngFor="let question of faq">
+        <app-qna-card
+        title = {{question.question}}
+        content = {{question.answer}}
+        ></app-qna-card>
+    </div>
+</div>
+
+

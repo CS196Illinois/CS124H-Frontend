@@ -50,6 +50,13 @@
       "languages": ""
     },
     {
+      "name": "Charles",
+      "bio": "coffee",
+      "picture": "charles",
+      "technical_areas": "Game Design, Web Development (Full Stack)",
+      "languages": "Chinese"
+    },
+    {
       "languages": "", 
       "bio": "", 
       "name": "Dhiraj", 
@@ -118,13 +125,6 @@
       "name": "Anagha", 
       "technical_areas": "NA", 
       "picture": "anagha"
-    }, 
-    {
-      "languages": "Hindi", 
-      "bio": "", 
-      "name": "Tanishq", 
-      "technical_areas": "Backend, ML/AI/Data Science, App Development", 
-      "picture": "tanishq"
     }, 
     {
       "languages": "Mandarin", 

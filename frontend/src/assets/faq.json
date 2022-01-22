@@ -1,0 +1,32 @@
+{
+    "faq": [
+        {
+            "question": "What is CS124H?",
+            "answer": "CS124H is a class that you can take concurrently with CS124! It is a project-based class designed to let you gain hands-on experience with coding while using industry-essential tools like Git and Bash. We will place you in a group of 5-7 based on your interests, and our CAs will help through the whole development process."
+        },
+        {
+            "question": "Do I need programming experience to join",
+            "answer": "No! Both beginner and experienced students are welcome– we’ll make sure that you will have a meaningful learning experience either way."
+        },
+        {
+            "question": "How do I register for the course?",
+            "answer": "We are CS199 section 124 on self service (CRN: 54574). For James Scholars filling out an HCLA, do not register for CS199 section 124 on self service. Instead, fill out an Honors Credit Learning Agreement (HCLA) attached to the non-honors CS 124 course to get honors credit. Everyone who fills out the HCLA will be required to fill out a google form to indicate that they will be participating in the class. https://forms.gle/Pz9u96qmbo45DPam8"
+        },
+        {
+            "question": "Is the class in-person",
+            "answer": "The class will be located primarily on discord (https://discord.gg/PQQp5t4g) and Youtube, but based on your preferences your team meetings can be either in-person, online, or hybrid (might change based on covid protocols). Our discord and website will house all the course/grade information. We will also release our content videos on Youtube, but the rest is up to your team."
+        },
+        {
+            "question": "Will there be homework?",
+            "answer": "There will be homework in the first few weeks when we are getting project groups set up. After that, the only homework will be to complete tutorials and work on your project, the amount of which will be determined by your project manager."
+        },
+        {
+            "question": "How will this class be graded?",
+            "answer": "You can find our grading information on the syllabus. Tl;dr– if you put in the work, you will get honors credit for 124."
+        },
+        {
+            "question": "Will this satisfy my James Scholar Honors requirement",
+            "answer": "Yes! You will need to fill out an Honors Credit Learning Agreement (HCLA) attached to the non-honors CS 124 course to get honors credit. In that form, indicate that you are participating in CS 124 Honors."
+        }
+    ]
+}
