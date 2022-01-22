@@ -1,5 +1,17 @@
 {
     "lectures": [
-        
+      {
+        "lectureID": "0",
+        "title": "What's CS 124 Honors?",
+        "date": "Thursday, Jan 20",
+        "slides": "https://docs.google.com/presentation/d/1-8K12O-ocxOiFbLo2SsMXEfyPtjDYh9oRr76_OHDEj0/edit?usp=sharing",
+        "video": [
+          {
+            "title": "What's CS 124 Honors?",
+            "link": "https://www.youtube.com/embed/Og1ZIMfG8xE",
+            "msg": "Take the following steps to join the course!\n1) JOIN THE DISCORD (NEW LINK! ): https://discord.gg/TqEZ8NnT6v\n2) Sign up for the class\nNon James Scholars: Sign up for the class on self-service (CS199-124)\nJames Scholars: Fill out the HCLA agreement for CS 124\nEveryone: Fill out this Google Form to confirm your enrollment https://forms.gle/4rB694Tm3t16aNEQ8\n3) Enroll in the course on PrairieLearn https://www.prairielearn.org/pl/enroll\nCS 124H: Freshman Honors: Introduction to Computer Science I"
+          }
+        ]
+      }
     ]
   }

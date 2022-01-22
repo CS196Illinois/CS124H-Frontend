@@ -14,8 +14,12 @@ export class PersonComponent implements OnInit {
   @Input() language: string;
   split_technical_areas;
   split_languages;
-  constructor() {}
-
+  errorHandler(event) {
+    console.log("errop!s")
+    event.target.src = '../../../../../assets/staffPictures/' + this.picture + '.jpg';
+  }
+  constructor() {
+  }
   ngOnInit() {
     this.split_technical_areas = this.technical_area.split(',');
     this.split_languages = this.language.split(',');

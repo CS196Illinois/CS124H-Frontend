@@ -57,7 +57,7 @@ const routes: Routes = [
     MatIconModule,
     MatMenuModule,
     MatCardModule,
-    MatChipsModule
+    MatChipsModule,
   ],
   providers: [LoginService, GradesService],
   bootstrap: [AppComponent],

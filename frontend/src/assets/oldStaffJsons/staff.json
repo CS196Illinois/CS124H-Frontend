@@ -1,0 +1,105 @@
+{
+    "staff": [
+        {
+        "name": "Rayna",
+        "bio": "Sleep deprived cs + poli sci major with a lot of opinions and a passion for crafts",
+        "picture": "rayna.jpg",
+        "technical_areas": "Web Development, Mobile Development, Frontend",
+        "languages": "Mandarin"
+        },
+        {
+        "name": "Rachael",
+        "bio": "milk before cereal",
+        "picture": "logo.png",
+        "technical_areas": "IOS, ML, Full-Stack",
+        "languages": "Japanese, Mandarin"
+        },
+        {
+        "name": "Jonah",
+        "bio": "I'm a sophomore majoring in Computer Science, interested in entrepreneurship and finance.",
+        "picture": "jonah.jpg",
+        "technical_areas": "Full-Stack, Web Development, Data Science/ML",
+        "languages": "Indonesian"
+        },
+        {
+        "name": "Welby",
+        "bio": "css isn't a real programming language",
+        "picture": "welby.jpg",
+        "technical_areas": "Game Dev, Frontend, Android Dev",
+        "languages": ""
+        },
+        {
+        "name": "Neil",
+        "bio": "Coffee connoisseur and raging Rustacean",
+        "picture": "neil.jpg",
+        "technical_areas": "Backend, Full-Stack, Cloud stuff, Web Dev (APIs)",
+        "languages": ""
+        },
+        {
+        "name": "Tanishq",
+        "bio": "I think the Office has to be the most underrated show of all time. I'm just a Comp Sci and Phil major who loves Steve Carell.",
+        "picture": "tanishq.jpg",
+        "technical_areas": "Backend, ML/AI/Data Science, App Development",
+        "languages": "Hindi"
+        },
+        {
+        "name": "Eustis",
+        "bio": "computer vision go brrrrr",
+        "picture": "william.jpg",
+        "technical_areas": "Backend, ML (focus on CV)",
+        "languages": ""
+        },
+        {
+        "name": "Matt",
+        "bio": "I’m a junior majoring in Computer Science + Economics. My interests are mobile development, fintech, and data analytics. I’m also a pilot in my free time.",
+        "picture": "matt.jpeg",
+        "technical_areas": "",
+        "languages": ""
+        },
+        {
+        "name": "Charles",
+        "bio": "coffee",
+        "picture": "charles.jpg",
+        "technical_areas": "Game Design, Web Development (Full Stack)",
+        "languages": "Chinese"
+        },
+        {
+        "name": "Shreya",
+        "bio": "Hey! I'm a sleep-deprived sophomore in bioengineering interested in data science and eating good food",
+        "picture": "shreya_b.jpeg",
+        "technical_areas": "Data Science/ML, Full-Stack",
+        "languages": ""
+        },
+        {
+        "name": "Jeffrey",
+        "bio": "",
+        "picture": "logo.png",
+        "technical_areas": "iOS (UIKit, SpriteKit and SwiftUI), full-stack web (Django, Flask), data mining + machine learning",
+        "languages": "Mandarin"
+        },
+        {
+        "name": "Bryant",
+        "bio": "Almost dunked",
+        "picture": "bryant.jpeg",
+        "technical_areas": "Backend, ML, CV",
+        "languages": "Chinese"
+        },
+        {
+        "name": "Raghav",
+        "bio": "CS Major, jazz pianist, and always eager to help!",
+        "picture": "raghav.jpeg",
+        "technical_areas": "Backend, Data Science/ML",
+        "languages": ""
+        },
+        {
+        "name": "Dhiraj",
+        "bio": "CS Major, jazz pianist, and always eager to help!",
+        "picture": "raghav.jpeg",
+        "technical_areas": "Backend, Data Science/ML",
+        "languages": ""
+        }
+            
+        
+
+    ]
+}
