@@ -19,7 +19,8 @@ export class LecturesComponent implements OnInit {
       this.lectureVideo = null;
       return;
     }
-    this.populate(data.lectures[0]);
+    // this.populate(data.lectures[data.lectures.length-1]);
+    this.changeLecture(data.lectures.length-1);
   }
 
   populate(lecture: {
@@ -40,6 +41,7 @@ export class LecturesComponent implements OnInit {
           lecture.video[i].link
         ),
         msg: lecture.video[i].msg,
+        slides: lecture.video[i].slides
       });
       console.log(this.lectureVideo);
     }

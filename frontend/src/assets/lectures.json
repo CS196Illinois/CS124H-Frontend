@@ -9,7 +9,8 @@
           {
             "title": "What's CS 124 Honors?",
             "link": "https://www.youtube.com/embed/Og1ZIMfG8xE",
-            "msg": "Take the following steps to join the course!\n1) JOIN THE DISCORD (NEW LINK! ): https://discord.gg/TqEZ8NnT6v\n2) Sign up for the class\nNon James Scholars: Sign up for the class on self-service (CS199-124)\nJames Scholars: Fill out the HCLA agreement for CS 124\nEveryone: Fill out this Google Form to confirm your enrollment https://forms.gle/4rB694Tm3t16aNEQ8\n3) Enroll in the course on PrairieLearn https://www.prairielearn.org/pl/enroll\nCS 124H: Freshman Honors: Introduction to Computer Science I"
+            "msg": "Take the following steps to join the course!\n1) JOIN THE DISCORD (NEW LINK! ): https://discord.gg/TqEZ8NnT6v\n2) Sign up for the class\nNon James Scholars: Sign up for the class on self-service (CS199-124)\nJames Scholars: Fill out the HCLA agreement for CS 124\nEveryone: Fill out this Google Form to confirm your enrollment https://forms.gle/4rB694Tm3t16aNEQ8\n3) Enroll in the course on PrairieLearn https://www.prairielearn.org/pl/enroll\nCS 124H: Freshman Honors: Introduction to Computer Science I",
+            "slides": ""
           }
         ]
       },
@@ -22,7 +23,8 @@
           {
             "title": "Intro to CS 124 Honors- Lecture 0",
             "link": "https://www.youtube.com/embed/yK_dNSAxtPU",
-            "msg": "Here is the form again: https://docs.google.com/forms/d/1Km1W... \nMost of the important links you need are attached there :)"
+            "msg": "Here is the form again: https://docs.google.com/forms/d/1Km1W... \nMost of the important links you need are attached there :)",
+            "slides": "https://docs.google.com/presentation/d/1-8K12O-ocxOiFbLo2SsMXEfyPtjDYh9oRr76_OHDEj0/edit#slide=id.p"
           }
         ]
       },
@@ -35,7 +37,28 @@
           {
             "title": "Bash Lecture",
             "link": "https://www.youtube.com/embed/sa499p6IQok",
-            "msg": "Welcome to the first lecture! Class website: https://honors.cs124.org/"
+            "msg": "Welcome to the first lecture! Class website: https://honors.cs124.org/",
+            "slides": "https://docs.google.com/presentation/d/1sUdfIVczRy8rXCOixisnofAezFITiAgMdcL3BcG1YoQ/edit#slide=id.g10cbf24164f_0_0"
+          }
+        ]
+      }, 
+      {
+        "lectureID": "3",
+        "title": "Lecture 2",
+        "date": "Thursday, Jan 20",
+        "slides": "",
+        "video": [
+          {
+            "title": "Git Basics",
+            "link": "https://www.youtube.com/embed/JkPue7Poh1U",
+            "msg": "WLearn more about the fundamentals of Git and how to use Git for a basic workflow!Lecturer: Matt Geimer",
+            "slides": "https://honors.cs124.org/assets/slides/Git_Basics.pdf"
+          }, 
+          {
+            "title": "GitHub Desktop Basics",
+            "link": "https://www.youtube.com/embed/bGcwxx-JRp4",
+            "msg": "Learn how to use GitHub Desktop to accomplish a basic Git workflow.Lecturer: Matt Geimer",
+            "slides": "https://honors.cs124.org/assets/slides/GitHub_Desktop_Basics.pdf"
           }
         ]
       }

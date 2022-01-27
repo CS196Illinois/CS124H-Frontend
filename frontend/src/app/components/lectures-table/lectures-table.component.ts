@@ -26,7 +26,7 @@ export class LecturesTableComponent implements OnInit {
     title: string;
     date: string;
     slides: string;
-    video: { title: string; link: string; msg: string }[];
+    video: { title: string; link: string; msg: string; slides: string }[];
   }) {
     this.lecture = lecture;
     this.populate(lecture);
