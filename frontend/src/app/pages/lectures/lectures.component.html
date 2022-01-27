@@ -10,7 +10,7 @@
   </div>
   <mat-drawer #drawer class="sidenav" mode="side">
     <h4>Lectures</h4>
-    <div *ngFor="let lecture of lectures">
+    <div class="navContent" *ngFor="let lecture of lectures">
       <button
         id="button"
         (click)="drawer.toggle()"

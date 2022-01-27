@@ -17,14 +17,14 @@
 
 #button {
   border: 0;
-  width: 18vw;
+  width: 100%;
   margin: 1%;
   border-radius: 6px;
 }
 
 .sidenav-content {
   height: 5vh;
-  width: 20vw;
+  width: 100%;
 }
 
 .sidenav {
@@ -39,5 +39,8 @@
     width: 100vw;
     height: 88vh;
     overflow: auto;
+  }
+  mat-drawer {
+    width: 35vw;
   }
 }
