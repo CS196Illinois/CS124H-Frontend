@@ -4,7 +4,7 @@
         "lectureID": "0",
         "title": "What's CS 124 Honors?",
         "date": "Tuesday, Jan 18",
-        "slides": "https://docs.google.com/presentation/d/1-8K12O-ocxOiFbLo2SsMXEfyPtjDYh9oRr76_OHDEj0/edit?usp=sharing",
+        "slides": "",
         "video": [
           {
             "title": "What's CS 124 Honors?",
@@ -17,7 +17,7 @@
         "lectureID": "1",
         "title": "Lecture 0",
         "date": "Thursday, Jan 20",
-        "slides": "https://docs.google.com/presentation/d/1-8K12O-ocxOiFbLo2SsMXEfyPtjDYh9oRr76_OHDEj0/edit?usp=sharing",
+        "slides": "",
         "video": [
           {
             "title": "Intro to CS 124 Honors- Lecture 0",
@@ -25,6 +25,20 @@
             "msg": "Here is the form again: https://docs.google.com/forms/d/1Km1W... \nMost of the important links you need are attached there :)"
           }
         ]
+      },
+      {
+        "lectureID": "2",
+        "title": "Lecture 1",
+        "date": "Thursday, Jan 20",
+        "slides": "",
+        "video": [
+          {
+            "title": "Bash Lecture",
+            "link": "https://www.youtube.com/embed/sa499p6IQok",
+            "msg": "Welcome to the first lecture! Class website: https://honors.cs124.org/"
+          }
+        ]
       }
+
     ]
   }
