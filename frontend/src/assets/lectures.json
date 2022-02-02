@@ -51,7 +51,7 @@
           {
             "title": "Git Basics",
             "link": "https://www.youtube.com/embed/JkPue7Poh1U",
-            "msg": "WLearn more about the fundamentals of Git and how to use Git for a basic workflow!Lecturer: Matt Geimer",
+            "msg": "Learn more about the fundamentals of Git and how to use Git for a basic workflow!Lecturer: Matt Geimer",
             "slides": "https://honors.cs124.org/assets/slides/Git_Basics.pdf"
           }, 
           {
@@ -59,6 +59,26 @@
             "link": "https://www.youtube.com/embed/bGcwxx-JRp4",
             "msg": "Learn how to use GitHub Desktop to accomplish a basic Git workflow.Lecturer: Matt Geimer",
             "slides": "https://honors.cs124.org/assets/slides/GitHub_Desktop_Basics.pdf"
+          }
+        ]
+      },
+      {
+        "lectureID": "4",
+        "title": "Lecture 3",
+        "date": "Thursday, Jan 20",
+        "slides": "",
+        "video": [
+          {
+            "title": "Git Branch and Merging",
+            "link": "https://www.youtube.com/embed/V0oyuLJOves",
+            "msg": "Up your Git game by learning how to use branching to collaborate with others. Lecturer: Matt Geimer",
+            "slides": ""
+          }, 
+          {
+            "title": "GitHub Desktop Branch and Merging",
+            "link": "https://www.youtube.com/embed/hjDWD8Q-pDo",
+            "msg": "Learn how to use branches with GitHub Desktop.Lecturer: Matt Geimer",
+            "slides": ""
           }
         ]
       }
