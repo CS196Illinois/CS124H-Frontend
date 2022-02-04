@@ -81,7 +81,20 @@
             "slides": ""
           }
         ]
+      },
+      {
+        "lectureID": "4",
+        "title": "Lecture 4",
+        "date": "Thursday, Jan 20",
+        "slides": "",
+        "video": [
+          {
+            "title": "Projects- CS 124 Honors Lecture 4",
+            "link": "https://www.youtube.com/embed/zqscsOTRZHg",
+            "msg": "",
+            "slides": ""
+          }
+        ]
       }
-
     ]
   }
