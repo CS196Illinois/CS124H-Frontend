@@ -16,7 +16,9 @@
     ],
     "types": [
       "node",
-      "jasmine"
+      "jasmine",
+      "gapi",
+      "gapi.auth2"
     ],
     "lib": [
       "es2019",
