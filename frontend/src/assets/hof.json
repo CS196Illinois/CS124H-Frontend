@@ -1,0 +1,44 @@
+{
+    "hof": [
+        {
+            "group": "Group 2",
+            "description": "Aadarsh Hegde, Danny Bezugliy, Eric Solheim, Nicole Zheng, and Tongrui Yu created a beautiful platformer with a twist: you can change the axis that the 2d plane is on in a 3d space. This project was made using Unity for the game logic and Blender for the assets. Definitely check this one out if you love games and puzzles. Group 2 did a fantastic job re-imagining an existing concept and providing a new twist.",
+            "github": "https://github.com/CS196Illinois/Group2-FA21"
+        },
+        {
+            "group": "Group 10",
+            "description": "Yangze Liu, David Hu, Daniel Ding, and Charlie Liu made a multiplayer game where you have to compete to collect the most coins and powerups. Using pygame, this group made a fast-paced competitive game that's fun to play. Group 10 stands out in their ability to keep a such a large project organized despite needing to be kept in one file.",
+            "github": "https://github.com/CS196Illinois/Group10-FA21"
+        },
+        {
+            "group": "Group 13",
+            "description": "Dylan Dunham, Lei Lin, Chris Deng, Aakash Kumar, and Xin Xie built a turn-based simulation for modeling predator/prey behavior. This group utilized React for the frontend and Flask for the backend, and in doing so was able to create a randomized set of coordinates for each simulation to start the animals off at, and passed this to the frontend using JSON. This project shows how even with a split between frontend and backend, a powerful project can be developed. Group 13's ability to effectively communicate and standardize the data being passed through the API is extremely admirable.",
+            "github": "https://github.com/CS196Illinois/Group13-FA21"
+        },
+        {
+            "group": "Group 26",
+            "description": "Aditya Asthana and Prem Dhoot created a movie-lover's dream: a recommendation engine that uses machine learning to pick the best movie based on the emotions displayed in a short recording of your voice. Both the classifier and the recommendation engine are feats on their own, and put together they're spectacular. While I may not be an ML guru, Eustis is and he says the model they developed is genuinely impressive.",
+            "github": "https://github.com/CS196Illinois/Group26-FA21"
+        },
+        {
+            "group": "Group 32",
+            "description": "Rohan Gudipaty, Yunsu Han, Taha Hashmi, and Khalid Alotaibi created a level-based 2d game in Java. Dubbed Journey to Midcard, what really sets this game apart was how modularized it was, making it incredibly easy to make new levels, characters, and powers. The card-based mechanics of this game made it essentially a requirement it was developed this way, but it's impressive nonetheless. This team showed how even with technical hurdles, a group can overcome problems to create a feature.",
+            "github": "https://github.com/CS196Illinois/Group32-FA21"
+        },
+        {
+            "group": "Group 33",
+            "description": "Jamie Rollison, Krushank Bayyapu, Shaarav Rotiwar, Maanav Agrawal, Owen Cushing, Cole Zimmerman worked on a project for audio classification/sharing. Their project includes a frontend website with a map of different audio files uploaded, including where they were recorded, as well as tags describing what they are. They also developed a classifier using pytorch to automatically apply these tags in the future. When this group presented at the project fair, the only word that came to mind was magnificent.",
+            "github": "https://github.com/CS196Illinois/Group33-FA21"
+        },
+        {
+            "group": "Group 46",
+            "description": "Rachel Shum, Minh Duong, Marcel Hoang, and Qingping Ye were in a group that really did do CS for Good. They created a python program that helps people learn and translate American Sign Language (ASL). Not only did they complete their initial MVP, but they also expanded it to interface with a dance dance revolution game so one could learn ASL while listening to music. This project was creative, intuitive to use, and deeply impressive.",
+            "github": "https://github.com/CS196Illinois/Group46-FA21"
+        },
+        {
+            "group": "Group 60",
+            "description": "Andrew Yang, Cloud, Joseph Chan, Nitya Sunkad, and Timor Averbuch take privacy very seriously with their application. Group 60 worked on a remote desktop connection that's end-to-end encrypted with HIPAA-compliant security mechanisms as well as a clean user interface. Encryption and networking are both extremely difficult measures to get right individually, but combining them increases the difficulty even more. Despite this, Group 60 was able to get their project fully-functional and even had time to add helpful comments and documentation in their codebase. Group 60's work was nothing but professional in every aspect from the codebase, to the product design, to the presentation.",
+            "github": "https://github.com/CS196Illinois/Group60-FA21"
+        }
+    ]
+}

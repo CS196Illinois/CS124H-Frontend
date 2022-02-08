@@ -20,18 +20,20 @@
   height: 8rem;
 }
 
-.hof-button {
-}
-
 .hof-card-container {
   display: flex;
+  padding: 2vh;
 }
 
 .hof-card {
   width: 60vw;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 590px) {
+  .hof-page-container {
+    padding-top: 5vw;
+    margin: 12vw;
+  }
   .hof-card-container {
     display: block;
     width: 100%;
