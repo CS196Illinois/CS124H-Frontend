@@ -15,7 +15,10 @@
       "node_modules/@types"
     ],
     "types": [
-      "node"
+      "node",
+      "jasmine",
+      "gapi",
+      "gapi.auth2"
     ],
     "lib": [
       "es2019",
