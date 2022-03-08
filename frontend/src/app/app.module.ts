@@ -23,6 +23,7 @@ import { HofComponent } from './pages/hof/hof.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { QnaCardComponent } from './components/qna-card/qna-card.component';
+import { GroupMakerComponent } from "./pages/groupmaker/groupmaker.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: "grades", component: GradesComponent },
   { path: "lectures", component: LecturesComponent},
   { path: "hof", component: HofComponent},
-  { path: "faq", component: FaqComponent}
+  { path: "faq", component: FaqComponent},
+  { path: "groupmaker", component: GroupMakerComponent }
 ];
 
 @NgModule({
@@ -48,7 +50,8 @@ const routes: Routes = [
     LecturesTableComponent,
     HofComponent,
     FaqComponent,
-    QnaCardComponent
+    QnaCardComponent,
+    GroupMakerComponent
   ],
   imports: [
     BrowserModule,

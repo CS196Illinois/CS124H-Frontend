@@ -1,0 +1,23 @@
+.title {
+  font-size: 3.5vw;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+@media (max-width: 559px) {
+  .title {
+    font-size: 10vw;
+    margin-top: 10%;
+  }
+  .link {
+    color: black;
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (min-width: 559px) {
+  nav {
+    display: none;
+  }
+}
