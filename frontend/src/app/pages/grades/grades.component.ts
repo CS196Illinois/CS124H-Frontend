@@ -9,12 +9,9 @@ import { LoginService } from "src/app/services/login.service";
 })
 export class GradesComponent implements OnInit {
   grades: JSON;
-  sprint0 = [];
-  sprint1 = [];
-  sprint2 = [];
-  sprint3 = [];
-  sprint4 = [];
-  sprint5 = [];
+  weekly = [];
+  hwGrades = [];
+  projectGrades = [];
   name: string;
   user: gapi.auth2.GoogleUser;
   flag: boolean = false;
@@ -23,7 +20,7 @@ export class GradesComponent implements OnInit {
     private LoginService: LoginService,
     private ref: ChangeDetectorRef,
     private NgZone: NgZone
-  ) {}
+  ) { }
   isSignedIn: boolean = false;
   isIllini: boolean = true;
   ngOnInit() {
@@ -33,12 +30,20 @@ export class GradesComponent implements OnInit {
       this.GradesService.getGrades().subscribe((data) => {
         this.grades = data;
         if (this.grades) {
+          // console.log(`THIS IS THE GRADES: ${this.grades['grades']['weekly']['']}`)
           this.NgZone.run(() => {
+            this.clearGrades()
             this.displayGrades(this.grades);
           });
         }
       });
     });
+  }
+
+  clearGrades() {
+    this.weekly = []
+    this.hwGrades = []
+    this.projectGrades = []
   }
 
   displayGrades(data: any) {
@@ -53,54 +58,20 @@ export class GradesComponent implements OnInit {
     }
     this.name = this.user.getBasicProfile().getGivenName();
     var grades = JSON.parse(JSON.stringify(data));
-    console.log("tyest" + grades);
-    var gradesArr = grades.grades;
+    console.log("tyest" + grades['grades']);
+    var gradesArr = grades['grades']['weekly'];
+    var otherGradesDict = grades['grades']['otherGrades']
     for (var i = 0; i < gradesArr.length; i++) {
       for (const [key, value] of Object.entries(gradesArr[i])) {
-        let assignmentName = "";
-        switch (key) {
-          case "sprint":
-            continue;
-          case "sprint grade":
-            assignmentName = "Total Sprint Grade";
-            break;
-          case "participation grades":
-            assignmentName = "Project Participation";
-            break;
-          case "vcs grades":
-            assignmentName = "Version Control and Workflow";
-            break;
-          case "completion individual grade":
-            assignmentName = "Task Completion";
-            break;
-          case "comm_grades_team":
-            assignmentName = "Communication";
-            break;
-          case "completion_grades_team":
-            assignmentName = "Team Completion";
-        }
-        console.log({ assignmentName: assignmentName, grade: value });
-        switch (i) {
-          case 0:
-            this.sprint0.push({ assignmentName: assignmentName, grade: value });
-            break;
-          case 1:
-            this.sprint1.push({ assignmentName: assignmentName, grade: value });
-            break;
-          case 2:
-            this.sprint2.push({ assignmentName: assignmentName, grade: value });
-            break;
-          case 3:
-            this.sprint3.push({ assignmentName: assignmentName, grade: value });
-            break;
-          case 4:
-            this.sprint4.push({ assignmentName: assignmentName, grade: value });
-            break;
-          case 5:
-            this.sprint5.push({ assignmentName: assignmentName, grade: value });
-            break;
+        if (key === 'total') {
+          this.weekly.push([`Week ${i + 1}`, value])
         }
       }
     }
+    this.hwGrades.push(['Github Homework', otherGradesDict['hw_gh']])
+    this.hwGrades.push(['Bash Homework', otherGradesDict['hw_bash']])
+    this.hwGrades.push(['Project Interest', otherGradesDict['hw_project_interest']])
+    this.hwGrades.push(['Project Idea', otherGradesDict['hw_project_idea']])
+    this.projectGrades.push(['Midterm Presentation', otherGradesDict['project_mt_pres']])
   }
 }

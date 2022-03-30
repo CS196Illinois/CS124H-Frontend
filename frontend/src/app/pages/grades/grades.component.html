@@ -15,72 +15,34 @@
   <h5 *ngIf="!grades">Loading the grades...</h5>
   <table class="content-table">
     <tr>
-      <th>Sprint 0</th>
+      <th>Weekly Grades</th>
       <th>Grades</th>
     </tr>
-    <tr *ngFor="let grade of sprint0">
-      <td>{{ grade.assignmentName }}</td>
-      <td>{{ grade.grade }}</td>
+    <tr *ngFor="let grade of weekly">
+      <td>{{ grade[0] }}</td>
+      <td>{{ grade[1] }}</td>
     </tr>
   </table>
-
   <br />
   <table class="content-table">
     <tr>
-      <th>Sprint 1</th>
+      <th>Homework Grades</th>
       <th>Grades</th>
     </tr>
-    <tr *ngFor="let grade of sprint1">
-      <td>{{ grade.assignmentName }}</td>
-      <td>{{ grade.grade }}</td>
+    <tr *ngFor="let grade of hwGrades">
+      <td>{{ grade[0] }}</td>
+      <td>{{ grade[1] }}</td>
     </tr>
   </table>
-
   <br />
   <table class="content-table">
     <tr>
-      <th>Sprint 2</th>
+      <th>Project Grades</th>
       <th>Grades</th>
     </tr>
-    <tr *ngFor="let grade of sprint2">
-      <td>{{ grade.assignmentName }}</td>
-      <td>{{ grade.grade }}</td>
-    </tr>
-  </table>
-
-  <br />
-  <table class="content-table">
-    <tr>
-      <th>Sprint 3</th>
-      <th>Grades</th>
-    </tr>
-    <tr *ngFor="let grade of sprint3">
-      <td>{{ grade.assignmentName }}</td>
-      <td>{{ grade.grade }}</td>
-    </tr>
-  </table>
-
-  <br />
-  <table class="content-table">
-    <tr>
-      <th>Sprint 4</th>
-      <th>Grades</th>
-    </tr>
-    <tr *ngFor="let grade of sprint4">
-      <td>{{ grade.assignmentName }}</td>
-      <td>{{ grade.grade }}</td>
-    </tr>
-  </table>
-
-  <br />
-  <table class="content-table">
-    <tr>
-      <th>Sprint 5</th>
-      <th>Grades</th>
-    </tr>
-    <tr *ngFor="let grade of sprint5">
-      <td>{{ grade.assignmentName }}</td>
-      <td>{{ grade.grade }}</td>
+    <tr *ngFor="let grade of projectGrades">
+      <td>{{ grade[0] }}</td>
+      <td>{{ grade[1] }}</td>
     </tr>
   </table>
 
