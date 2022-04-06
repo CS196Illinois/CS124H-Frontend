@@ -33,6 +33,7 @@ export class GradesComponent implements OnInit {
           // console.log(`THIS IS THE GRADES: ${this.grades['grades']['weekly']['']}`)
           this.NgZone.run(() => {
             this.clearGrades()
+            console.log(this.grades)
             this.displayGrades(this.grades);
           });
         }
@@ -70,7 +71,6 @@ export class GradesComponent implements OnInit {
     }
     this.hwGrades.push(['Github Homework', otherGradesDict['hw_gh']])
     this.hwGrades.push(['Bash Homework', otherGradesDict['hw_bash']])
-    this.hwGrades.push(['Project Interest', otherGradesDict['hw_project_interest']])
     this.hwGrades.push(['Project Idea', otherGradesDict['hw_project_idea']])
     this.projectGrades.push(['Midterm Presentation', otherGradesDict['project_mt_pres']])
   }
