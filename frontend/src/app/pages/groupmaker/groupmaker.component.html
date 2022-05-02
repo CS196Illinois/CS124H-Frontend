@@ -1,18 +1,26 @@
-<div *ngIf="user != null" class="title">
-  <h1>Group Making</h1>
-</div>
-
-<h1 style="margin-top: 10%; margin-left: 3%" *ngIf="!user">
-  Please sign in with your Google Illinois account to access this form.
-</h1>
-<h5 style="margin-left: 3%" *ngIf="user && !isIllini">
-  It seems that you are not using your Illinois account. Please use your
-  Illinois Google Account.
-</h5>
-
-<div *ngIf="user && isIllini">
-  <form class="group-making-form" action="/path/goes/here">
-    <label for="fname">Discord tag:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-  </form>
+<div class="groupmaker">
+  <div *ngIf="user != null" class="title">
+    <h1>Group Making</h1>
+  </div>
+  
+  <h1 style="margin-top: 10%; margin-left: 3%" *ngIf="!user">
+    Please sign in with your Google Illinois account to access this form.
+  </h1>
+  <h5 style="margin-left: 3%" *ngIf="user && !isIllini">
+    It seems that you are not using your Illinois account. Please use your
+    Illinois Google Account.
+  </h5>
+  
+  <div *ngIf="user && isIllini">
+    <form class="group-making-form" action="/api/post/124groupmakerprofile">
+      <label for="form-name" class="gm-label">Name</label><br>
+      <input type="text" id="form-name" name="name" /><br>
+      <label for="form-tag" class="gm-label">Discord Tag</label><br>
+      <input type="text" id="form-tag" name="tag" /><br>
+      <label for="form-interests" class="gm-label">Fields of Interest</label><br>
+      <textarea id="form-interests" name="interests" style="width: 80%"></textarea><br>
+      <label for="project-ideas" class="gm-label">Project Ideas or Desired Type of Project</label><br>
+      <textarea id="project-ideas" name="projects" style="width: 80%"></textarea><br><br>
+    </form>
+  </div>
 </div>
