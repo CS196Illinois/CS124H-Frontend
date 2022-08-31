@@ -13,6 +13,40 @@
                     "slides": ""
                 }
             ]
+        },
+        {
+            "lectureID": "1",
+            "title": "Lecture 1",
+            "date": "Thursday, Jan 20",
+            "slides": "",
+            "video": [
+                {
+                    "title": "Bash Lecture",
+                    "link": "https://www.youtube.com/embed/sa499p6IQok",
+                    "msg": "Welcome to the first lecture! Class website: https://honors.cs124.org/",
+                    "slides": "https://docs.google.com/presentation/d/1sUdfIVczRy8rXCOixisnofAezFITiAgMdcL3BcG1YoQ/edit#slide=id.g10cbf24164f_0_0"
+                }
+            ]
+        },
+        {
+            "lectureID": "2",
+            "title": "Lecture 2",
+            "date": "Thursday, Jan 20",
+            "slides": "",
+            "video": [
+                {
+                    "title": "Git Basics",
+                    "link": "https://www.youtube.com/embed/JkPue7Poh1U",
+                    "msg": "Learn more about the fundamentals of Git and how to use Git for a basic workflow!Lecturer: Matt Geimer",
+                    "slides": "https://honors.cs124.org/assets/slides/Git_Basics.pdf"
+                },
+                {
+                    "title": "GitHub Desktop Basics",
+                    "link": "https://www.youtube.com/embed/bGcwxx-JRp4",
+                    "msg": "Learn how to use GitHub Desktop to accomplish a basic Git workflow.Lecturer: Matt Geimer",
+                    "slides": "https://honors.cs124.org/assets/slides/GitHub_Desktop_Basics.pdf"
+                }
+            ]
         }
     ]
 }
