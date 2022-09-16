@@ -15,8 +15,9 @@ export class PersonComponent implements OnInit {
   split_technical_areas;
   split_languages;
   errorHandler(event) {
+    console.log("errop!s" + this.name + this.picture + this.bio);
     console.log("errop!s")
-    event.target.src = '../../../../../assets/staffPictures/' + this.picture + '.jpg';
+    event.target.src = '../../../../../assets/staff_pictures/staff_picturesFA22' + this.picture + '.jpg';
   }
   constructor() {
   }

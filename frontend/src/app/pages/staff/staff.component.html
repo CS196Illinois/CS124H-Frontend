@@ -2,14 +2,8 @@
   <div class="title">Staff</div>
   <div class="cards">
     <div *ngFor="let person of staff" class="people">
-      <app-person
-        name="{{ person.name }}"
-        bio="{{ person.bio }}"
-        picture="{{ person.picture }}"
-        technical_area="{{ person.technical_areas }}"
-        language="{{ person.languages }}"
-        class="people"
-      ></app-person>
+      <app-person name="{{ person.name }}" bio="{{ person.bio }}" picture="{{ person.picture }}"
+        technical_area="{{ person.technical_areas }}" language="{{ person.languages }}" class="people"></app-person>
     </div>
   </div>
 </div>

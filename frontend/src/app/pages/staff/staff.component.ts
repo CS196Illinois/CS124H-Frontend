@@ -8,9 +8,10 @@ import * as data from "../../../assets/staff.json";
 })
 export class StaffComponent implements OnInit {
   staff = data.staff;
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
+    console.log(this.staff);
     console.log(this.staff.length);
   }
 }
