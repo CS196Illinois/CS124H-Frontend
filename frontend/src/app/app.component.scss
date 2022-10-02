@@ -53,24 +53,29 @@ app-sidebar {
   app-sidebar {
     display: none;
   }
+
   .btncontainer {
     width: 100px;
     height: 60px;
     margin-left: 65%;
     margin-top: 1%;
   }
+
   .login-btn,
   .login-btn-sign-out {
     font-size: 11px !important;
     background-position: 42px 6px !important;
     height: 30px;
   }
+
   .login-btn-sign-out {
     background-color: #bdbdbd !important;
   }
+
   .full-text {
     display: none;
   }
+
   .short-text {
     display: block;
   }
@@ -82,6 +87,12 @@ app-sidebar {
     word-wrap: break-word;
     height: 100%;
     margin-left: 25%;
+  }
+
+  .dashboard {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    height: 100%;
   }
 }
 

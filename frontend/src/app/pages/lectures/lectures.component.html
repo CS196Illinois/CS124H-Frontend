@@ -11,11 +11,7 @@
   <mat-drawer #drawer class="sidenav" mode="side">
     <h4>Lectures</h4>
     <div class="navContent" *ngFor="let lecture of lectures">
-      <button
-        id="button"
-        (click)="drawer.toggle()"
-        (click)="changeLecture(lecture.lectureID)"
-      >
+      <button id="button" (click)="drawer.toggle()" (click)="changeLecture(lecture.lectureID)">
         {{ lecture.title }}
       </button>
     </div>
@@ -24,16 +20,9 @@
   <h1 *ngIf="lecture.title">{{ lecture.title }}</h1>
   <div *ngFor="let lecture of lectureVideo">
     <h3>{{ lecture.title }}</h3>
-    <iframe
-      *ngIf="lecture.link"
-      width="100%"
-      height="400vh"
-      [src]="lecture.link"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+    <iframe *ngIf="lecture.link" width="100%" height="400vh" [src]="lecture.link" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
     <a *ngIf="lecture.slides" href="{{ lecture.slides }}" target="_blank">Click here to get the slides</a>
     <p style="white-space: pre-line">{{lecture.msg}}</p>
   </div>

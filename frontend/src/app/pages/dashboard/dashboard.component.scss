@@ -1,0 +1,22 @@
+.preview {
+    width: 100%;
+}
+
+.lecture-dashboard-container {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+}
+
+.form {
+    display: flex;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

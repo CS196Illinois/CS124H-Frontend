@@ -21,17 +21,20 @@ import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from "@angular/material";
 import { HofComponent } from './pages/hof/hof.component';
 import { FaqComponent } from './pages/faq/faq.component';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { QnaCardComponent } from './components/qna-card/qna-card.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "resources", component: ResourcesComponent },
   { path: "staff", component: StaffComponent },
   { path: "grades", component: GradesComponent },
-  { path: "lectures", component: LecturesComponent},
-  { path: "hof", component: HofComponent},
-  { path: "faq", component: FaqComponent}
+  { path: "lectures", component: LecturesComponent },
+  { path: "hof", component: HofComponent },
+  { path: "faq", component: FaqComponent },
+  { path: "dashboard", component: DashboardComponent }
 ];
 
 @NgModule({
@@ -48,7 +51,8 @@ const routes: Routes = [
     LecturesTableComponent,
     HofComponent,
     FaqComponent,
-    QnaCardComponent
+    QnaCardComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -61,9 +65,15 @@ const routes: Routes = [
     MatMenuModule,
     MatCardModule,
     MatChipsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    CommonModule
   ],
   providers: [LoginService, GradesService],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+
+export class AppModule {
+  // constructor() {
+  //   console.log(RouterModule.caller)
+  // }
+}

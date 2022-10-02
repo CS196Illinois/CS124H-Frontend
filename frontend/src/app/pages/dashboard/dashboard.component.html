@@ -1,0 +1,32 @@
+<h1>Dashboard</h1>
+<div class="lecture-dashboard-container">
+    <div class="form">
+        <form id="Form">
+            <label>Lecture Title:</label><br>
+            <input type="text" #title><br>
+            <label>Lecture Date:</label><br>
+            <input type="text" #date><br>
+            <label>Lecture Link (Find the embed link on YT):</label><br>
+            <input type="text" #link><br>
+            <label>Lecture Commentary:</label><br>
+            <input type="text" #commentary><br>
+            <button type='button'
+                (click)="setLecture(title.value,date.value,link.value,commentary.value)">Preview</button>
+            <input type='reset' value="Submit" (click)="submitLecture()">
+        </form>
+    </div>
+    <div class="preview">
+        <div *ngIf="lecture && lecture.title">
+            <h1 *ngIf="lecture.title">{{ lecture.title }}</h1>
+            <iframe *ngIf="lecture.link" width="1000vw" height="500vh" [src]="lecture.link" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <a *ngIf="lecture.slides" href="{{ lecture.slides }}" target="_blank">Click here to get the slides</a>
+            <p style="white-space: pre-line">{{lecture.msg}}</p>
+        </div>
+        <div *ngIf="isSubmit && !lecture">
+            <h3>Sent {{isSubmit}} to database!</h3>
+        </div>
+    </div>
+</div>
