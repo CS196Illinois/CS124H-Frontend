@@ -4,6 +4,8 @@ import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
 import { Observable, Subscriber } from 'rxjs';
 import { CommonModule } from '@angular/common';
 
+declare var getVideoID: any;
+
 @NgModule({
   imports: [CommonModule]
 })
@@ -25,6 +27,7 @@ export class DashboardComponent implements OnInit {
     this.isSubmit = lectureData
   }
   setLecture(title, date, link, commentary) {
+    link = new getVideoID(link)
     let lectureData = { 'title': title, 'date': date, 'link': link, 'msg': commentary }
     localStorage.setItem('lecture-data', JSON.stringify(lectureData));
     this.loadLecture()
