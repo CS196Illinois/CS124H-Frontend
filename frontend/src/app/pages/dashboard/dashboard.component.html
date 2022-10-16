@@ -10,6 +10,11 @@
             <input type="text" #link><br>
             <label>Lecture Commentary:</label><br>
             <input type="text" #commentary><br>
+            <!-- <script type="text/javascript">
+                console.log("Current Link Value", link.value);
+                link.value = getVideoID(link.value);
+                console.log("After getVideoID", link.value);
+            </script> -->
             <button type='button'
                 (click)="setLecture(title.value,date.value,link.value,commentary.value)">Preview</button>
             <input type='reset' value="Submit" (click)="submitLecture()">
@@ -30,4 +35,4 @@
         </div>
     </div>
 </div>
-<script src="./youtubelink.js"></script>
+

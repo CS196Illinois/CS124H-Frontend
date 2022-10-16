@@ -4,7 +4,7 @@ import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
 import { Observable, Subscriber } from 'rxjs';
 import { CommonModule } from '@angular/common';
 
-declare var getVideoID: any;
+declare function getVideoID(text): any;
 
 @NgModule({
   imports: [CommonModule]
@@ -27,8 +27,22 @@ export class DashboardComponent implements OnInit {
     this.isSubmit = lectureData
   }
   setLecture(title, date, link, commentary) {
-    link = new getVideoID(link)
-    let lectureData = { 'title': title, 'date': date, 'link': link, 'msg': commentary }
+    console.log("Entered Set Lecture with link", link)
+    //link = getVideoID(link)
+    if (!link.includes('http')) {
+        var intro = "http://"
+        link = intro.concat(link);
+    }
+    // regex from http://stackoverflow.com/a/5831191/1614967
+    var re = /https?:\/\/(?:[0-9A-Z-]+\.)?(?:youtu\.be\/|youtube?\.com\S*[^\w\s-])([\w-]{11})(?=[^\w-]|$)[?=&+%\w.-]*/ig;
+    var id = link.replace(re,'$1');
+    if (id.includes('#')) {
+        id = id.split('#')[0];
+    }
+    var embed = "https://youtube.com/embed/"
+    id = embed.concat(id)
+    console.log("This should be the embedded linkL: ", id)
+    let lectureData = { 'title': title, 'date': date, 'link': id, 'msg': commentary }
     localStorage.setItem('lecture-data', JSON.stringify(lectureData));
     this.loadLecture()
   }
@@ -41,6 +55,7 @@ export class DashboardComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
+    console.log("Creating Dashboard: https://www.youtube.com/watch?v=qjD_yHJTU_U")
     this.loadLecture()
   }
 
