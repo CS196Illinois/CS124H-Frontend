@@ -13,7 +13,6 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./staff-profile-dashboard.component.scss']
 })
 export class StaffProfileDashboardComponent implements OnInit {
-  @Input() skills: string;
   profile;
   isSubmit;
   split_skills;
@@ -24,8 +23,8 @@ export class StaffProfileDashboardComponent implements OnInit {
     }
     this.isSubmit = profileData
   }
-  setProfile(name, description, skills, picture) {
-    let profileData = { 'name': name, 'description': description, 'skills': skills, 'picture': picture }
+  setProfile(name, bio, technical_areas, languages, picture) {
+    let profileData = { 'name': name, 'bio': bio, 'technical_areas': technical_areas, 'languages': languages, 'picture': picture }
     localStorage.setItem('profile-data', JSON.stringify(profileData));
     this.loadProfile()
   }
@@ -39,11 +38,6 @@ export class StaffProfileDashboardComponent implements OnInit {
 
   ngOnInit() {
     this.loadProfile()
-    // this.split_skills = this.skills.split(',');
-    // for (let skill in this.split_skills) {
-    //   skill.trimLeft();
-    //   skill.trimRight();
-    // }
   }
 
 }
