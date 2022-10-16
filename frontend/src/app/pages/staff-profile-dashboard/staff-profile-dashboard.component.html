@@ -1,0 +1,36 @@
+<h1 class="title">Staff Profile Dashboard</h1>
+<div class="profile-dashboard-container">
+    <div class="form">
+        <form id="Form">
+            <label>Name:</label><br>
+            <input type="text" #name><br>
+            <label>Description:</label><br>
+            <input type="text" #description><br>
+            <label>Skills:</label><br>
+            <input type="text" #skills><br>
+            <label>Photo:</label><br>
+            <input type="file" #picture>
+            <button type='button'
+                (click)="setProfile(name.value,description.value,skills.value,picture.value)">Preview</button>
+            <input type='reset' value="Submit" (click)="submitProfile()">
+        </form>
+    </div>
+    <div class="preview">
+        <div *ngIf="profile && profile.picture" class="preview-profile">
+            <img src="{{ profile.picture }}" class="picture">
+        </div>
+        <div *ngIf="profile && profile.name" class="preview-profile">
+            <h1 *ngIf="profile.name">{{ profile.name }}</h1>
+            <p style="white-space: pre-line">{{ profile.description }}</p>
+            <h3>Skills</h3>
+            <mat-chip-list #chipList multiple>
+                <mat-chip class="chips-skill">
+                  {{ profile.skills }}
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+        <div *ngIf="isSubmit && !profile">
+            <h3>Sent {{isSubmit}} to database!</h3>
+        </div>
+    </div>
+</div>

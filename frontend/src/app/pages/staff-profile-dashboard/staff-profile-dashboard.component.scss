@@ -1,0 +1,41 @@
+.preview {
+    width: 90%;
+}
+
+.profile-dashboard-container {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+}
+
+.form {
+    display: flex;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.picture {
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.chips-skill {
+    font-size: x-small;
+    margin: 5%;
+    background-color: #2d57b9;
+    color: rgb(255, 255, 255);
+}
+
+.preview {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.preview-profile {
+    flex: 1;
+}

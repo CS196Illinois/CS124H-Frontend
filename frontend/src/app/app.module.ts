@@ -24,6 +24,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { QnaCardComponent } from './components/qna-card/qna-card.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { StaffProfileDashboardComponent } from './pages/staff-profile-dashboard/staff-profile-dashboard.component';
 import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
@@ -34,7 +35,8 @@ const routes: Routes = [
   { path: "lectures", component: LecturesComponent },
   { path: "hof", component: HofComponent },
   { path: "faq", component: FaqComponent },
-  { path: "dashboard", component: DashboardComponent }
+  { path: "dashboard", component: DashboardComponent },
+  { path: "staff-profile-dashboard", component: StaffProfileDashboardComponent }
 ];
 
 @NgModule({
@@ -52,7 +54,8 @@ const routes: Routes = [
     HofComponent,
     FaqComponent,
     QnaCardComponent,
-    DashboardComponent
+    DashboardComponent,
+    StaffProfileDashboardComponent
   ],
   imports: [
     BrowserModule,
