@@ -29,8 +29,8 @@ export class DashboardComponent implements OnInit {
   comment = new FormControl('')
   getNewLectureData() {
     console.log(this.title.value, this.slide.value)
-    this.lecture = { 'LectureID': this.lectureData.length, 'Title': this.title.value, 'Slide': this.slide.value, 'Link': this.link.value, 'Comment': this.comment.value }
-    this.lectureData.push({ 'LectureID': this.lectureData.length, 'Title': this.title.value, 'Link': this.link.value, 'Slide': this.slide.value, 'Comment': this.comment.value })
+    this.lecture = { 'LectureID': this.lectureData[this.lectureData.length - 1].LectureID + 1, 'Title': this.title.value, 'Slide': this.slide.value, 'Link': this.link.value, 'Comment': this.comment.value }
+    this.lectureData.push(this.lecture)
     this.lectureStringify = JSON.stringify(this.lectureData)
   }
 
