@@ -1,32 +1,49 @@
 <h1>Dashboard</h1>
 <div class="lecture-dashboard-container">
-    <div class="form">
-        <form id="Form">
-            <label>Lecture Title:</label><br>
-            <input type="text" #title><br>
-            <label>Lecture Date:</label><br>
-            <input type="text" #date><br>
-            <label>Lecture Link (Find the embed link on YT):</label><br>
-            <input type="text" #link><br>
-            <label>Lecture Commentary:</label><br>
-            <input type="text" #commentary><br>
-            <button type='button'
-                (click)="setLecture(title.value,date.value,link.value,commentary.value)">Preview</button>
-            <input type='reset' value="Submit" (click)="submitLecture()">
-        </form>
-    </div>
     <div class="preview">
-        <div *ngIf="lecture && lecture.title">
-            <h1 *ngIf="lecture.title">{{ lecture.title }}</h1>
-            <iframe *ngIf="lecture.link" width="1000vw" height="500vh" [src]="lecture.link" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a *ngIf="lecture.slides" href="{{ lecture.slides }}" target="_blank">Click here to get the slides</a>
-            <p style="white-space: pre-line">{{lecture.msg}}</p>
+        <div class="tabbar">
+            <button *ngIf="!tableView" (click)="toggleTableView()">Toggle Table View</button>
+            <button *ngIf="!tableView" (click)="submitLecturePrompt()">Save Changes</button>
+            <button *ngIf="tableView" (click)="toggleTableView()">
+                Preview</button>
         </div>
-        <div *ngIf="isSubmit && !lecture">
-            <h3>Sent {{isSubmit}} to database!</h3>
+        <div class="view">
+            <div *ngIf="tableView">
+                <table class="table">
+                    <tr>
+                        <th>LectureID</th>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Link</th>
+                        <th>Slide</th>
+                        <th>Comment</th>
+                        <th></th>
+                    </tr>
+                    <tr *ngIf="lectureData">
+                        <td>{{lectureData.length}}</td>
+                        <td><input type="text" id="Title" [formControl]="title"></td>
+                        <td>Automatically dated</td>
+                        <td><input type="text" id="Link" [formControl]="link"></td>
+                        <td><input type="text" id="Slide" [formControl]="slide"></td>
+                        <td><textarea cols="30" rows="3" type="text" id="Comment" [formControl]="comment"></textarea>
+                        </td>
+                        <th><button (click)="submitLecturePrompt()">Submit</button>
+                        </th>
+                    </tr>
+                    <tr *ngFor="let lecture of lectureData.reverse(), let i = index">
+                        <td>{{lectureData.length-i-1}}</td>
+                        <td>{{lecture.Title}}</td>
+                        <td>{{lecture.Date}}</td>
+                        <td>{{lecture.Link}}</td>
+                        <td>{{lecture.Slides}}</td>
+                        <td>{{lecture.Comment}}</td>
+                        <th><button (click)="deleteLecturePrompt(i)">Delete</button></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="lecturePreview" *ngIf=" lectureData && !tableView">
+                <app-lectures class="lecturePreview" lectureData="{{lectureStringify}}"> </app-lectures>
+            </div>
         </div>
     </div>
 </div>
