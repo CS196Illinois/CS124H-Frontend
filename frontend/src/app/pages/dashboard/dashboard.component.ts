@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
     }
     this.isSubmit = lectureData
   }
-  getVideoID(text) {
+  getVideoLink(text) {
     if (!text.includes('http')) {
         var intro = "http://"
         text = intro.concat(text);
@@ -35,13 +35,13 @@ export class DashboardComponent implements OnInit {
     if (id.includes('#')) {
         id = id.split('#')[0];
     }
-    var embed = "https://youtube.com/embed/"
-    id = embed.concat(id)
-    return id;
+    var starting_url = "https://youtube.com/embed/"
+    full_embedded_link = starting_url.concat(id)
+    return full_embedded_link;
   }
   setLecture(title, date, link, commentary) {
     console.log("Entered Set Lecture with link", link)
-    link = this.getVideoID(link)
+    link = this.getVideoLink(link)
     let lectureData = { 'title': title, 'date': date, 'link': link, 'msg': commentary }
     localStorage.setItem('lecture-data', JSON.stringify(lectureData));
     this.loadLecture()
