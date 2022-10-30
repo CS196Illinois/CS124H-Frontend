@@ -17,7 +17,6 @@ import { CommonModule } from '@angular/common';
 export class StaffProfileDashboardComponent implements OnInit {
   profile;
   isSubmit;
-  split_skills;
   name = new FormControl('')
   bio = new FormControl('')
   technical_areas = new FormControl('')
