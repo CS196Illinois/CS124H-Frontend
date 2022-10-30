@@ -25,6 +25,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { QnaCardComponent } from './components/qna-card/qna-card.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -34,7 +35,7 @@ const routes: Routes = [
   { path: "lectures", component: LecturesComponent },
   { path: "hof", component: HofComponent },
   { path: "faq", component: FaqComponent },
-  { path: "dashboard", component: DashboardComponent }
+  { path: "dashboard", component: DashboardComponent },
 ];
 
 @NgModule({
@@ -66,7 +67,8 @@ const routes: Routes = [
     MatCardModule,
     MatChipsModule,
     MatExpansionModule,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   providers: [LoginService, GradesService],
   bootstrap: [AppComponent],

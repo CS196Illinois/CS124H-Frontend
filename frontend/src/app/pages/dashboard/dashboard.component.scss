@@ -1,5 +1,29 @@
+.lecture-dashboard-container {
+    margin: auto;
+}
+
 .preview {
-    width: 100%;
+    width: 100vw;
+    display: grid !important;
+    grid-template-rows: 1fr 15fr;
+    display: flex;
+}
+
+.lecturePreview {
+    margin-top: -10%;
+}
+
+.view {
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    width: 100vw;
+}
+
+.tabbar {
+    z-index: 10;
 }
 
 .lecture-dashboard-container {
@@ -7,16 +31,11 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 10px;
+    height: 100%;
 }
 
 .form {
     display: flex;
     margin-top: 20%;
     margin-left: 10%;
-}
-
-.preview {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
