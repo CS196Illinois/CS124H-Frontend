@@ -2,14 +2,14 @@
 <div class="lecture-dashboard-container">
     <div class="preview">
         <div class="tabbar">
-            <button *ngIf="!tableView" (click)="toggleTableView()">Toggle Table View</button>
-            <button *ngIf="!tableView" (click)="submitLecturePrompt()">Save Changes</button>
-            <button *ngIf="tableView" (click)="toggleTableView()">
+            <button class="btn" *ngIf="!tableView" (click)="toggleTableView()">Toggle Table View</button>
+            <button class="btn" *ngIf="!tableView" (click)="submitLecturePrompt()">Save Changes</button>
+            <button class="btn" *ngIf="tableView" (click)="toggleTableView()">
                 Preview</button>
         </div>
         <div class="view">
             <div *ngIf="tableView">
-                <table class="table">
+                <table class="tb">
                     <tr>
                         <th>LectureID</th>
                         <th>Title</th>
@@ -21,13 +21,13 @@
                     </tr>
                     <tr *ngIf="lectureData">
                         <td>{{lectureData.length}}</td>
-                        <td><input type="text" id="Title" [formControl]="title"></td>
+                        <td><textarea type="text" id="Title" [formControl]="title"></textarea></td>
                         <td>Automatically dated</td>
-                        <td><input type="text" id="Link" [formControl]="link"></td>
-                        <td><input type="text" id="Slide" [formControl]="slide"></td>
-                        <td><textarea cols="30" rows="3" type="text" id="Comment" [formControl]="comment"></textarea>
+                        <td><textarea type="text" id="Link" [formControl]="link"></textarea></td>
+                        <td><textarea type="text" id="Slide" [formControl]="slide"></textarea></td>
+                        <td><textarea type="text" id="Comment" [formControl]="comment"></textarea>
                         </td>
-                        <th><button (click)="submitLecturePrompt()">Submit</button>
+                        <th><button class="btn" (click)="submitLecturePrompt()">Submit</button>
                         </th>
                     </tr>
                     <tr *ngFor="let lecture of lectureData.reverse(), let i = index">
@@ -37,7 +37,7 @@
                         <td>{{lecture.Link}}</td>
                         <td>{{lecture.Slides}}</td>
                         <td>{{lecture.Comment}}</td>
-                        <th><button (click)="deleteLecturePrompt(i)">Delete</button></th>
+                        <th><button class="btn" (click)="deleteLecturePrompt(i)">Delete</button></th>
                     </tr>
                 </table>
             </div>

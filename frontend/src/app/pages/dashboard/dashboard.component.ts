@@ -29,8 +29,8 @@ export class DashboardComponent implements OnInit {
   comment = new FormControl('')
   getNewLectureData() {
     console.log(this.title.value, this.slide.value)
-    this.lecture = { 'LectureID': this.lectureData.length, 'Title': this.title.value, 'Slide': this.slide.value, 'Link': this.link.value, 'Comment': this.comment.value }
-    this.lectureData.push({ 'LectureID': this.lectureData.length, 'Title': this.title.value, 'Link': this.link.value, 'Slide': this.slide.value, 'Comment': this.comment.value })
+    this.lecture = { 'LectureID': this.lectureData[this.lectureData.length - 1].LectureID + 1, 'Title': this.title.value, 'Slide': this.slide.value, 'Link': this.getVideoLink(this.link.value), 'Comment': this.comment.value }
+    this.lectureData.push(this.lecture)
     this.lectureStringify = JSON.stringify(this.lectureData)
   }
 
@@ -47,6 +47,21 @@ export class DashboardComponent implements OnInit {
       this.LectureService.delete(this.lectureData[this.lectureData.length - 1 - id].LectureID)
       location.reload()
     }
+  }
+
+  getVideoLink(text) {
+    if (!text.includes('http')) {
+      var intro = "http://"
+      text = intro.concat(text);
+    }
+    // regex from http://stackoverflow.com/a/5831191/1614967
+    var re = /https?:\/\/(?:[0-9A-Z-]+\.)?(?:youtu\.be\/|youtube?\.com\S*[^\w\s-])([\w-]{11})(?=[^\w-]|$)[?=&+%\w.-]*/ig;
+    var id = text.replace(re, '$1');
+    if (id.includes('#')) {
+      id = id.split('#')[0];
+    }
+    var starting_url = "https://youtube.com/embed/"
+    return starting_url.concat(id);
   }
 
   toggleTableView() {
