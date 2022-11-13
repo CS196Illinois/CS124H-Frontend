@@ -33,6 +33,7 @@ export class DashboardComponent implements OnInit {
 
   setView(view: number) {
     this.view = view;
+    localStorage.setItem('view', String(view));
     console.log("View is set to:" + typeof (view) + view)
   }
 
@@ -112,6 +113,10 @@ export class DashboardComponent implements OnInit {
       this.lectureStringify = JSON.stringify(this.lectureData)
       console.log(this.lectureStringify)
     })
+    const view = localStorage.getItem('view')
+    if (view) {
+      this.view = parseInt(view);
+    }
   }
 
 }
