@@ -1,4 +1,4 @@
-<h1 class="title">Staff Profile Dashboard</h1>
+<!-- <h1 class="title">Staff Profile Dashboard</h1> -->
 <div class="profile-dashboard-container">
     <div class="form">
         <label>Name:</label><br>
@@ -10,16 +10,16 @@
         <label>Languages:</label><br>
         <input type="text" [formControl]="languages"><br>
         <label>Picture:</label><br>
-        <input type="file" accept="image/*" [formControl]="picture"><br>
-        <button type='button'
-            (click)="setProfile()">Preview</button>
+        <input type="file" accept="image/*" (change)="onChange($event)" [formControl]="picture"><br>
+        <button type='button' (click)="setProfile()">Preview</button>
         <input type='reset' value="Submit" (click)="submitProfile()">
     </div>
-    <div class="preview">
+    <div class="profile">
         <div *ngIf="profile && profile.name">
             <div class="cards">
                 <app-person name="{{ profile.name }}" bio="{{ profile.bio }}" picture="{{ profile.picture }}"
-                    technical_area="{{ profile.technical_areas }}" language="{{ profile.languages }}" class="people"></app-person>
+                    technical_area="{{ profile.technical_areas }}" language="{{ profile.languages }}" class="people">
+                </app-person>
             </div>
         </div>
         <div *ngIf="isSubmit && !profile">

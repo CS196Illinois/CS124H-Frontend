@@ -15,8 +15,9 @@ import { CommonModule } from '@angular/common';
 })
 
 export class StaffProfileDashboardComponent implements OnInit {
-  profile;
+  profile = { 'name': '', 'bio': '', 'technical_areas': '', 'languages': '', 'picture': '' };
   isSubmit;
+  imgfile;
   name = new FormControl('')
   bio = new FormControl('')
   technical_areas = new FormControl('')
@@ -24,14 +25,15 @@ export class StaffProfileDashboardComponent implements OnInit {
   picture = new FormControl('')
   pictureSource: string;
 
-  loadProfile() {
-    let profileData = localStorage.getItem('profile-data')
-    if (profileData) {
-      this.profile = JSON.parse(profileData)
-    }
+  // loadProfile() {
+  //   let profileData = localStorage.getItem('profile-data')
+  //   if (profileData) {
+  //     this.profile = JSON.parse(profileData)
+  //   }
 
-    this.isSubmit = profileData
-  }
+  //   this.isSubmit = profileData
+  // }
+
   setPictureSource() {
     let id = this.name.value.split(" ");
     for (let i = 0; i < id.length; i++) {
@@ -39,11 +41,22 @@ export class StaffProfileDashboardComponent implements OnInit {
     }
     this.pictureSource = id.join("");
   }
+
+  onChange(event) {
+    var reader = new FileReader();
+    reader.readAsDataURL(event.target.files[0]); // read file as data url
+    reader.onload = (event) => { // called once readAsDataURL is completed
+      console.log(event)
+      this.imgfile = reader.result;
+    }
+  }
+
   setProfile() {
-    this.setPictureSource();
-    let profileData = { 'name': this.name.value, 'bio': this.bio.value, 'technical_areas': this.technical_areas.value, 'languages': this.languages.value, 'picture': this.pictureSource }
-    localStorage.setItem('profile-data', JSON.stringify(profileData));
-    this.loadProfile()
+    // this.setPictureSource();
+    // let profileData = { 'name': this.name.value, 'bio': this.bio.value, 'technical_areas': this.technical_areas.value, 'languages': this.languages.value, 'picture': this.imgfile }
+    // localStorage.setItem('profile-data', JSON.stringify(profileData));
+    // this.loadProfile()
+    this.profile = { 'name': this.name.value, 'bio': this.bio.value, 'technical_areas': this.technical_areas.value, 'languages': this.languages.value, 'picture': this.imgfile };
   }
   submitProfile() {
     // TODO: do some stuff to post profile-data to backend and persist in DB
@@ -54,6 +67,6 @@ export class StaffProfileDashboardComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    this.loadProfile()
+    // this.loadProfile()
   }
 }

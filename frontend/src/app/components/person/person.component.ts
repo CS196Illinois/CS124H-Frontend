@@ -14,6 +14,7 @@ export class PersonComponent implements OnInit {
   @Input() language: string;
   split_technical_areas;
   split_languages;
+
   errorHandler(event) {
     console.log("errop!s" + this.name + this.picture + this.bio);
     console.log("errop!s")
@@ -22,6 +23,7 @@ export class PersonComponent implements OnInit {
   constructor() {
   }
   ngOnInit() {
+    console.log(this.picture);
     this.split_technical_areas = this.technical_area.split(',');
     this.split_languages = this.language.split(',');
     for (let language in this.split_languages) {

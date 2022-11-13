@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { LectureService } from "src/app/services/lecture.service";
 import { faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 import { throwToolbarMixedModesError } from '@angular/material';
+import { StaffProfileDashboardComponent } from '../staff-profile-dashboard/staff-profile-dashboard.component';
 
 @NgModule({
   imports: [CommonModule]
@@ -18,6 +19,8 @@ import { throwToolbarMixedModesError } from '@angular/material';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+
+  view = 0; // 0 = profile view; 1 = lecture view
   lecture = null;
   isSubmit = null;
   tableView = true;
@@ -27,6 +30,12 @@ export class DashboardComponent implements OnInit {
   slide = new FormControl('')
   link = new FormControl('')
   comment = new FormControl('')
+
+  setView(view: number) {
+    this.view = view;
+    console.log("View is set to:" + typeof (view) + view)
+  }
+
   getNewLectureData() {
     console.log(this.title.value, this.slide.value)
     this.lecture = { 'LectureID': this.lectureData[this.lectureData.length - 1].LectureID + 1, 'Title': this.title.value, 'Slide': this.slide.value, 'Link': this.getVideoLink(this.link.value), 'Comment': this.comment.value }

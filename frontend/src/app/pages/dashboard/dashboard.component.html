@@ -1,5 +1,12 @@
-<h1>Dashboard</h1>
-<div class="lecture-dashboard-container">
+<nav class="dashboard-nav">
+    <h3>Dashboard</h3>
+    <button (click)="setView(0)">Profile</button>
+    <button (click)="setView(1)">Lecture</button>
+</nav>
+<div *ngIf="view == 0">
+    <app-staff-profile-dashboard></app-staff-profile-dashboard>
+</div>
+<div *ngIf="view == 1" class="lecture-dashboard-container">
     <div class="preview">
         <div class="tabbar">
             <button class="btn" *ngIf="!tableView" (click)="toggleTableView()">Toggle Table View</button>
