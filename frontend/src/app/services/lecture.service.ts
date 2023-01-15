@@ -30,7 +30,7 @@ export class LectureService {
     // deployment endpoint: https://cs196.cs.illinois.edu/wsgi/api
     this.http
       .get<JSON>(
-        "http://127.0.0.1:5000/api/get/124Lectures",
+        "https://cs196.cs.illinois.edu/wsgi/api/get/124Lectures",
         httpOptions
       )
       .subscribe((res) => {
@@ -52,7 +52,7 @@ export class LectureService {
     console.log(lectures)
     this.http
       .post(
-        "http://127.0.0.1:5000/api/post/Add124Lectures",
+        "https://cs196.cs.illinois.edu/wsgi/api/post/Add124Lectures",
         lectures,
         httpOptions
       ).subscribe((res) => {
@@ -72,7 +72,7 @@ export class LectureService {
     let body = { 'LectureID': id }
     this.http
       .post(
-        "http://127.0.0.1:5000/api/post/Delete124Lectures",
+        "https://cs196.cs.illinois.edu/wsgi/api/post/Delete124Lectures",
         body,
         httpOptions
       ).subscribe((res) => {
