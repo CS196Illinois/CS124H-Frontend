@@ -29,6 +29,7 @@ export class DashboardComponent implements OnInit {
   isSubmit = null;
   tableView = true;
   lectureData = [];
+  lectureStringify;
   title = new FormControl('')
   slide = new FormControl('')
   link = new FormControl('')
@@ -55,6 +56,7 @@ export class DashboardComponent implements OnInit {
 
   getNewLectureData() {
     this.lectureData.push({ 'LectureID': this.lectureData.length, 'Title': this.title.value, 'Slide': this.slide.value, 'Link': this.getVideoLink(this.link.value), 'Comment': this.comment.value })
+    this.lectureStringify = JSON.stringify(this.lectureData)
   }
 
   clearForm() {
@@ -142,6 +144,7 @@ export class DashboardComponent implements OnInit {
       this.LectureService.getLectures().subscribe((data) => {
         if (data['Lectures'].length) {
           this.lectureData = data['Lectures']
+          this.lectureStringify = JSON.stringify(this.lectureData)
           console.log(this.lectureData)
           this.ref.detectChanges();
         } else {
