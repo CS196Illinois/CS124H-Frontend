@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import * as data from "../../../assets/staff.json";
+import { StaffService } from "src/app/services/staff.service";
+// import * as data from "../../../assets/staff.json";
 
 @Component({
   selector: "app-staff",
@@ -7,11 +8,12 @@ import * as data from "../../../assets/staff.json";
   styleUrls: ["./staff.component.scss"],
 })
 export class StaffComponent implements OnInit {
-  staff = data.staff;
-  constructor() { }
-
+  constructor(private StaffService: StaffService) { }
+  staff = null;
   ngOnInit() {
-    console.log(this.staff);
-    console.log(this.staff.length);
+    this.StaffService.getStaffProfile(true).subscribe((staff) => {
+      this.staff = staff['staff']
+      console.log("HERE!" + this.staff[0].Name);
+    })
   }
 }

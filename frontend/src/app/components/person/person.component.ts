@@ -23,7 +23,11 @@ export class PersonComponent implements OnInit {
   constructor() {
   }
   ngOnInit() {
-    console.log(this.picture);
+    // console.log("from person card!")
+    // console.log(this.picture);
+    if (!this.picture) {
+      this.picture = '/assets/logo.png'
+    }
     this.split_technical_areas = this.technical_area.split(',');
     this.split_languages = this.language.split(',');
     for (let language in this.split_languages) {

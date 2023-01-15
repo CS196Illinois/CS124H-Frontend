@@ -6,8 +6,8 @@
     margin-left: 4%;
     padding-top: 50px;
     display: grid;
-    width: 35vw;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 40vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
 }
@@ -15,7 +15,7 @@
 .dashboard-nav button {
     background-color: white;
     text-align: center;
-    width: 35%;
+    width: 30%;
     height: 85%;
     line-height: 32px;
     border-radius: 7%;

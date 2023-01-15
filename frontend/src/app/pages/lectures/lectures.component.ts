@@ -8,35 +8,23 @@ import { LectureService } from "src/app/services/lecture.service";
   styleUrls: ["./lectures.component.scss"],
 })
 export class LecturesComponent implements OnInit {
-  @Input() lectureData: string;
-  lectures;
+  @Input() lectureData: string = null;
+  lectures = null;
   currLecture;
   constructor(private sanitizer: DomSanitizer, private NgZone: NgZone, private LectureService: LectureService) { }
 
   ngOnInit() {
-    if (!this.lectureData) {
-      this.LectureService.getLectures().subscribe((data) => {
-        this.lectures = data['Lectures']
-        for (let i = 0; i < this.lectures.length; i++) {
-          this.lectures[i].Link = this.sanitizer.bypassSecurityTrustResourceUrl(
-            this.lectures[i].Link
-          )
-        }
-        // this.populate(data.lectures[data.lectures.length-1]);
-        this.changeLecture(this.lectures.length - 1);
-      })
-    } else {
-      console.log(typeof (this.lectureData))
-      this.lectures = JSON.parse(this.lectureData)
+    this.LectureService.getLectures().subscribe((data) => {
+      console.log(data)
+      this.lectures = data['Lectures']
       for (let i = 0; i < this.lectures.length; i++) {
         this.lectures[i].Link = this.sanitizer.bypassSecurityTrustResourceUrl(
           this.lectures[i].Link
         )
       }
-      console.log(this.lectures)
       // this.populate(data.lectures[data.lectures.length-1]);
       this.changeLecture(this.lectures.length - 1);
-    }
+    })
   }
 
   changeLecture(id: number) {

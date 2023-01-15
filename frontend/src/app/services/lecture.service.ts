@@ -9,11 +9,18 @@ import { catchError } from 'rxjs/operators';
 })
 export class LectureService {
   lectures = new ReplaySubject<JSON>(1);
-  constructor(private http: HttpClient) {
-    this.fetch()
+  user: gapi.auth2.GoogleUser;
+  constructor(private http: HttpClient, private LoginService: LoginService) {
+    this.LoginService.observable().subscribe((user) => {
+      this.user = user;
+      // sign in
+      if (this.user) this.getLectures();
+      // sign out
+      if (!this.user) this.lectures.next(null);
+    });
   }
 
-  public fetch() {
+  public getLectures(): Observable<JSON> {
     const httpOptions = {
       headers: new HttpHeaders({
         Accept: "application/json",
@@ -29,6 +36,7 @@ export class LectureService {
       .subscribe((res) => {
         this.lectures.next(res);
       });
+    return this.lectures.asObservable()
   }
 
   public submit(lectures) {
@@ -36,6 +44,7 @@ export class LectureService {
       headers: new HttpHeaders({
         Accept: "application/json",
         "Content-Type": "application/json",
+        Authorization: this.user.getAuthResponse().id_token,
       }),
     };
     console.log("SENDING!!")
@@ -56,6 +65,7 @@ export class LectureService {
       headers: new HttpHeaders({
         Accept: "application/json",
         "Content-Type": "application/json",
+        Authorization: this.user.getAuthResponse().id_token,
       }),
     };
     // deployment endpoint: https://cs196.cs.illinois.edu/wsgi/api
@@ -68,9 +78,5 @@ export class LectureService {
       ).subscribe((res) => {
         console.log(res)
       });
-  }
-
-  public getLectures(): Observable<JSON> {
-    return this.lectures;
   }
 }

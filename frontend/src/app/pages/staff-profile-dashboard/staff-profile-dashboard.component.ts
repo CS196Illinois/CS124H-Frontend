@@ -1,8 +1,10 @@
-import { Component, OnInit, NgModule, Input } from '@angular/core';
+import { Component, OnInit, NgModule, Input, ChangeDetectorRef } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
 import { FormGroup, FormControl } from '@angular/forms';
 import { Observable, Subscriber } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { StaffService } from "src/app/services/staff.service";
+import { LoginService } from "src/app/services/login.service";
 
 @NgModule({
   imports: [CommonModule]
@@ -15,7 +17,7 @@ import { CommonModule } from '@angular/common';
 })
 
 export class StaffProfileDashboardComponent implements OnInit {
-  profile = { 'name': '', 'bio': '', 'technical_areas': '', 'languages': '', 'picture': '' };
+  profile = null;
   isSubmit;
   imgfile;
   name = new FormControl('')
@@ -24,7 +26,6 @@ export class StaffProfileDashboardComponent implements OnInit {
   languages = new FormControl('')
   picture = new FormControl('')
   pictureSource: string;
-
   // loadProfile() {
   //   let profileData = localStorage.getItem('profile-data')
   //   if (profileData) {
@@ -43,12 +44,12 @@ export class StaffProfileDashboardComponent implements OnInit {
   }
 
   onChange(event) {
+    console.log("TEST!")
     var reader = new FileReader();
-    reader.readAsDataURL(event.target.files[0]); // read file as data url
     reader.onload = (event) => { // called once readAsDataURL is completed
-      console.log(event)
       this.imgfile = reader.result;
     }
+    reader.readAsDataURL(event.target.files[0]); // read file as data url
   }
 
   setProfile() {
@@ -56,17 +57,22 @@ export class StaffProfileDashboardComponent implements OnInit {
     // let profileData = { 'name': this.name.value, 'bio': this.bio.value, 'technical_areas': this.technical_areas.value, 'languages': this.languages.value, 'picture': this.imgfile }
     // localStorage.setItem('profile-data', JSON.stringify(profileData));
     // this.loadProfile()
+    if (!this.imgfile) this.imgfile = ""
     this.profile = { 'name': this.name.value, 'bio': this.bio.value, 'technical_areas': this.technical_areas.value, 'languages': this.languages.value, 'picture': this.imgfile };
   }
   submitProfile() {
     // TODO: do some stuff to post profile-data to backend and persist in DB
     console.log('sending staff profile data to DB!')
-    this.profile = null;
+    this.setProfile()
+    this.StaffService.submitProfile(this.profile)
     localStorage.removeItem('profile-data');
+    this.ref.detectChanges()
   }
-  constructor(private sanitizer: DomSanitizer) { }
-
+  constructor(private sanitizer: DomSanitizer, private StaffService: StaffService, private LoginService: LoginService, private ref: ChangeDetectorRef) { }
   ngOnInit() {
-    // this.loadProfile()
+    this.StaffService.getStaffProfile().subscribe((staff) => {
+      this.profile = { 'name': staff["Name"], 'bio': staff["Bio"], 'technical_areas': staff["TechnicalAreas"], 'languages': staff["Languages"], 'picture': staff["Picture"] };
+      this.ref.detectChanges()
+    })
   }
 }

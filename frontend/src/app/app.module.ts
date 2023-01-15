@@ -27,6 +27,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { StaffProfileDashboardComponent } from './pages/staff-profile-dashboard/staff-profile-dashboard.component';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { StaffDashboardComponent } from './pages/dashboard/staff-dashboard/staff-dashboard.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -37,7 +38,8 @@ const routes: Routes = [
   { path: "hof", component: HofComponent },
   { path: "faq", component: FaqComponent },
   { path: "dashboard", component: DashboardComponent },
-  { path: "staff-profile-dashboard", component: StaffProfileDashboardComponent }
+  { path: "staff-profile-dashboard", component: StaffProfileDashboardComponent },
+  { path: "staff-dashboard", component: StaffDashboardComponent }
 ];
 
 @NgModule({
@@ -56,7 +58,8 @@ const routes: Routes = [
     FaqComponent,
     QnaCardComponent,
     DashboardComponent,
-    StaffProfileDashboardComponent
+    StaffProfileDashboardComponent,
+    StaffDashboardComponent
   ],
   imports: [
     BrowserModule,
