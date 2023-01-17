@@ -1,4 +1,5 @@
 <div class="title">Staff</div>
+<h3 *ngIf="staff == null">Loading..</h3>
 <div *ngIf="staff" class="staff">
   <div class="cards">
     <div *ngFor="let person of staff" class="people">

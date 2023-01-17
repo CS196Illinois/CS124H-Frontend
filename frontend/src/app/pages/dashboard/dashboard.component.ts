@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 import { LectureService } from "src/app/services/lecture.service";
 import { faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 import { throwToolbarMixedModesError } from '@angular/material';
-import { StaffProfileDashboardComponent } from '../staff-profile-dashboard/staff-profile-dashboard.component';
+import { StaffProfileDashboardComponent } from './staff-profile-dashboard/staff-profile-dashboard.component';
 import { LoginService } from "src/app/services/login.service";
 import { StaffDashboardComponent } from './staff-dashboard/staff-dashboard.component';
 import { ActivatedRoute, Router } from '@angular/router';

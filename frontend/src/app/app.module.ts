@@ -24,7 +24,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { QnaCardComponent } from './components/qna-card/qna-card.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { StaffProfileDashboardComponent } from './pages/staff-profile-dashboard/staff-profile-dashboard.component';
+import { StaffProfileDashboardComponent } from './pages/dashboard/staff-profile-dashboard/staff-profile-dashboard.component';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { StaffDashboardComponent } from './pages/dashboard/staff-dashboard/staff-dashboard.component';

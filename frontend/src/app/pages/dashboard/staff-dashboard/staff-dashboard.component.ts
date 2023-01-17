@@ -24,14 +24,20 @@ export class StaffDashboardComponent implements OnInit {
   }
 
   addStaff() {
-    const staffObj = { 'email': this.email.value, 'status': this.status.value }
-    this.StaffService.addStaff(JSON.stringify(staffObj))
-    this.refreshComp()
+    let submit = confirm("Are you sure you want to add this staff?")
+    if (submit) {
+      const staffObj = { 'email': this.email.value, 'status': this.status.value }
+      this.StaffService.addStaff(JSON.stringify(staffObj))
+      this.refreshComp()
+    }
   }
   delStaff(email: string) {
-    const payload = { 'email': email }
-    this.StaffService.delStaff(JSON.stringify(payload))
-    this.refreshComp()
+    let submit = confirm("Are you sure you want to delete this staff?")
+    if (submit) {
+      const payload = { 'email': email }
+      this.StaffService.delStaff(JSON.stringify(payload))
+      this.refreshComp()
+    }
   }
 
   ngOnInit() {

@@ -1,5 +1,8 @@
 <h1 style="padding-left: 1vw; padding-top: 6vh" *ngIf="lectures == null">
-  No lectures yet. Check again later
+  Loading...
+</h1>
+<h1 style="padding-left: 1vw; padding-top: 6vh" *ngIf="lectures.length == 0">
+  No lectures yet. Check again later.
 </h1>
 <div class="helper"></div>
 <mat-drawer-container class="container" autosize>
