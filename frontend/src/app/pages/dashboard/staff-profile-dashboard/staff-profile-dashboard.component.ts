@@ -62,11 +62,14 @@ export class StaffProfileDashboardComponent implements OnInit {
   }
   submitProfile() {
     // TODO: do some stuff to post profile-data to backend and persist in DB
-    console.log('sending staff profile data to DB!')
-    this.setProfile()
-    this.StaffService.submitProfile(this.profile)
-    localStorage.removeItem('profile-data');
-    this.ref.detectChanges()
+    let submit = confirm("Are you sure you want to delete this staff?")
+    if (submit) {
+      console.log('sending staff profile data to DB!')
+      this.setProfile()
+      this.StaffService.submitProfile(this.profile)
+      localStorage.removeItem('profile-data');
+      this.ref.detectChanges()
+    }
   }
   constructor(private sanitizer: DomSanitizer, private StaffService: StaffService, private LoginService: LoginService, private ref: ChangeDetectorRef) { }
   ngOnInit() {

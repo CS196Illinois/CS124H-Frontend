@@ -1,4 +1,5 @@
 <h3 *ngIf="user == null">Please Login</h3>
+<h3 *ngIf="status == -1 && user != null"> Loading ...</h3>
 <h3 *ngIf="status == 0 && user != null"> You do not have authorization to view this page!</h3>
 <nav class="dashboard-nav">
     <h3 *ngIf="user!=null">{{netid}}</h3>

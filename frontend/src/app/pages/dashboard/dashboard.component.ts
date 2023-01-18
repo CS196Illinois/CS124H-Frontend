@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit {
   user: gapi.auth2.GoogleUser;
   isStaff: boolean = false;
   netid;
-  status = 0;
+  status = -1;
 
   refreshComp() {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false
